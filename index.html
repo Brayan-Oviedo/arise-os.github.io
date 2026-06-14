@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ArisePages | Webs que venden - Desde $100</title>
+  <meta name="description" content="ArisePages: Webs premium que convierten. Desde $100. En 7 días. Conversión garantizada. Sin contratos.">
+  <meta name="keywords" content="web de ventas, página de conversión, diseño web premium, página que vende, conversión">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg: #050507;
+      --text: #ffffff;
+      --muted: rgba(255,255,255,0.5);
+      --red: #FF2D55;
+      --red-glow: rgba(255,45,85,0.35);
+      --border: rgba(255,255,255,0.06);
+      --card-bg: rgba(255,255,255,0.03);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      -webkit-font-smoothing: antialiased;
+      scrollbar-width: thin;
+      scrollbar-color: var(--red) var(--bg);
+    }
+    html::-webkit-scrollbar {
+      width: 8px;
+    }
+    html::-webkit-scrollbar-track {
+      background: var(--bg);
+    }
+    html::-webkit-scrollbar-thumb {
+      background: var(--red);
+      border-radius: 4px;
+    }
+    html::-webkit-scrollbar-thumb:hover {
+      background: rgba(255,45,85,0.8);
+    }
+    body { background: var(--bg); color: var(--text); font-family: 'Poppins', sans-serif; overflow-x: hidden; font-weight: 400; width: 100%; }
+    h1, h2, h3, h4, h5, h6 { font-family: 'Poppins', sans-serif; font-weight: 800; letter-spacing: -0.01em; }
+    a { color: inherit; text-decoration: none; }
+    button { cursor: pointer; border: none; background: none; font-family: inherit; color: inherit; }
+
+    .grain {
+      position: fixed; inset: 0; z-index: 9999; pointer-events: none; opacity: 0.035;
+      background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAElBMVEUAAAAAAAAAAAAAAAAAAAAAAADgKxmiAAAABnRSTlMFBQUFBQVMIhJzAAAASUlEQVQ4y2MYBaNg2AMLBgYGZhDJxMDADCKZGRjYQSQLAwMHiORkYOAEkVwMDFwgkpuBgQdE8jIw8IFIfgYGARApwMAgONDpBgBbXQMdLRWVwgAAAABJRU5ErkJggg==);
+    }
+
+    nav {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 1000;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 1.5rem clamp(1.5rem, 5vw, 4rem);
+      transition: background 0.4s, backdrop-filter 0.4s;
+    }
+    nav.scrolled { background: rgba(5,5,7,0.85); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); }
+
+    .nav-logo { font-family: 'Poppins', sans-serif; font-size: 1.5rem; letter-spacing: -0.01em; font-weight: 800; }
+    .nav-logo span { color: var(--red); }
+
+    .nav-links { display: flex; align-items: center; gap: 2.5rem; }
+    .nav-links a { font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.6); transition: color 0.2s; font-weight: 600; }
+    .nav-links a:hover { color: var(--text); }
+
+    .nav-cta {
+      background: var(--red); color: white; padding: 0.65rem 1.6rem;
+      border-radius: 2px; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase;
+      font-weight: 800; transition: box-shadow 0.3s; font-family: 'Poppins', sans-serif;
+    }
+    .nav-cta:hover { box-shadow: 0 0 30px var(--red-glow); }
+
+    @media (max-width: 768px) { .nav-links { display: none; } }
+
+    #hero {
+      height: 100vh; position: relative; display: flex; align-items: center; justify-content: center;
+      overflow: hidden; padding-top: 80px;
+    }
+
+    .hero-bg {
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 90% 70% at 50% 40%, rgba(255,45,85,0.1) 0%, transparent 65%),
+                  radial-gradient(ellipse 60% 80% at 80% 80%, rgba(168,85,247,0.07) 0%, transparent 60%);
+    }
+
+    .hero-content { position: relative; text-align: center; z-index: 2; max-width: 800px; }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.55rem;
+      font-family: 'Inter', sans-serif; font-size: 0.62rem; letter-spacing: 0.2em;
+      text-transform: uppercase; color: rgba(255,255,255,0.45);
+      border: 1px solid rgba(255,255,255,0.09); border-radius: 100px;
+      padding: 0.4rem 1rem; margin-bottom: 1.4rem;
+      background: rgba(255,255,255,0.025); backdrop-filter: blur(12px);
+      opacity: 0;
+    }
+
+    .hero-badge-dot {
+      width: 7px; height: 7px; border-radius: 50%; background: #25D366;
+      box-shadow: 0 0 10px #25D366;
+    }
+
+    .hero-eyebrow {
+      font-family: 'Poppins', sans-serif; font-size: 0.75rem; letter-spacing: 0.3em;
+      text-transform: uppercase; color: var(--red); margin-bottom: 1.5rem; opacity: 0; font-weight: 700;
+    }
+
+    .hero-title {
+      font-size: clamp(3.5rem, 10vw, 9rem); line-height: 1; letter-spacing: -0.015em;
+      text-transform: uppercase; margin-bottom: 1.8rem; font-weight: 800;
+    }
+
+    .hero-title span.accent { color: var(--red); }
+
+    .hero-sub {
+      font-family: 'Inter', sans-serif; font-size: clamp(0.85rem, 2vw, 1rem);
+      color: var(--muted); margin-bottom: 2rem; max-width: 520px; line-height: 1.7; opacity: 0;
+    }
+
+    .hero-actions { display: flex; gap: 1rem; justify-content: center; align-items: center; opacity: 0; flex-wrap: wrap; }
+
+    .btn-primary {
+      background: var(--red); color: white; padding: 1rem 2.8rem;
+      font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase; font-weight: 800;
+      border-radius: 2px; position: relative; overflow: hidden;
+      transition: box-shadow 0.3s; font-family: 'Poppins', sans-serif;
+    }
+
+    .btn-primary:hover { box-shadow: 0 0 50px var(--red-glow), 0 0 100px rgba(255,45,85,0.15); }
+
+    .btn-ghost {
+      border: 1px solid var(--border); padding: 1rem 2.8rem;
+      font-size: 0.82rem; letter-spacing: 0.12em; text-transform: uppercase;
+      border-radius: 2px; color: var(--muted); transition: border-color 0.3s, color 0.3s; font-weight: 700; font-family: 'Poppins', sans-serif;
+    }
+
+    .btn-ghost:hover { border-color: var(--text); color: var(--text); }
+
+    section {
+      padding: 8vh clamp(1.5rem, 5vw, 6rem);
+      position: relative;
+    }
+
+    .section-eyebrow {
+      font-family: 'Poppins', sans-serif; font-size: 0.7rem; letter-spacing: 0.25em;
+      text-transform: uppercase; color: var(--red); margin-bottom: 1rem; font-weight: 600;
+    }
+
+    .section-title {
+      font-size: clamp(2.5rem, 6vw, 5rem); line-height: 1; letter-spacing: -0.01em;
+      text-transform: uppercase; margin-bottom: 2rem; font-weight: 800;
+    }
+
+    .section-sub {
+      font-family: 'Inter', sans-serif; font-size: 0.9rem; color: var(--muted);
+      line-height: 1.7; max-width: 500px;
+    }
+
+    .examples-toolbar {
+      display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;
+      margin-top: 2rem; margin-bottom: 3rem;
+    }
+
+    .toolbar-btn {
+      padding: 0.7rem 1.5rem; border: 1px solid rgba(255,255,255,0.2);
+      background: transparent; color: rgba(255,255,255,0.6);
+      border-radius: 4px; font-size: 0.8rem; letter-spacing: 0.08em;
+      text-transform: uppercase; font-weight: 600; font-family: 'Poppins', sans-serif;
+      cursor: pointer; transition: all 0.3s;
+    }
+
+    .toolbar-btn:hover { border-color: var(--red); color: var(--text); }
+
+    .toolbar-btn.active {
+      background: var(--red); color: white; border-color: var(--red);
+      box-shadow: 0 0 30px rgba(255,45,85,0.3);
+    }
+
+    .toolbar-email {
+      margin-left: auto; display: flex; align-items: center; gap: 0.5rem;
+      background: rgba(37,211,102,0.1); border-color: rgba(37,211,102,0.3);
+      color: #25D366;
+    }
+
+    .toolbar-email:hover {
+      background: rgba(37,211,102,0.2); border-color: #25D366;
+      box-shadow: 0 0 20px rgba(37,211,102,0.2);
+    }
+
+    .divider { width: 100%; height: 1px; background: linear-gradient(90deg, transparent, var(--red), transparent); margin: 2rem 0; opacity: 0.3; }
+
+    .pricing-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem; margin-top: 3rem;
+    }
+
+    .pricing-card {
+      background: rgba(255,255,255,0.05); border: 1px solid rgba(255,107,107,0.3);
+      border-radius: 8px; padding: 2rem; text-align: center; position: relative;
+      transition: all 0.3s;
+    }
+
+    .pricing-card:hover {
+      background: rgba(255,107,107,0.1); border-color: var(--red); transform: translateY(-5px);
+    }
+
+    .pricing-card.featured {
+      border-color: var(--red); background: rgba(255,107,107,0.15); transform: scale(1.05);
+    }
+
+    .pricing-card.featured::before {
+      content: "MÁS POPULAR";
+      position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+      background: var(--red); color: white; padding: 0.3rem 1rem;
+      font-size: 0.75rem; border-radius: 20px; font-weight: 700; letter-spacing: 1px;
+    }
+
+    .plan-name { font-size: 1.4rem; font-weight: 800; margin-bottom: 1.2rem; letter-spacing: -0.01em; }
+
+    .plan-price { font-size: 2.8rem; font-weight: 800; color: var(--red); margin-bottom: 0.5rem; letter-spacing: -0.01em; }
+
+    .plan-price sup { font-size: 0.9rem; color: rgba(255,255,255,0.5); font-weight: 600; }
+
+    .plan-desc { color: rgba(255,255,255,0.6); font-size: 0.95rem; margin-bottom: 2.2rem; font-family: 'Poppins', sans-serif; line-height: 1.5; }
+
+    .plan-features {
+      text-align: left; margin-bottom: 2.2rem; list-style: none;
+    }
+
+    .plan-features li {
+      padding: 0.7rem 0; border-bottom: 1px solid rgba(255,255,255,0.08);
+      color: rgba(255,255,255,0.75); font-size: 0.9rem; font-family: 'Poppins', sans-serif;
+    }
+
+    .plan-features li::before { content: "✓ "; color: var(--red); font-weight: 800; margin-right: 0.6rem; }
+
+    .plan-features li:last-child { border-bottom: none; }
+
+    .benefits {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 2rem; margin-top: 3rem;
+    }
+
+    .benefit-card { text-align: center; }
+
+    .benefit-icon { font-size: 3rem; margin-bottom: 1.2rem; }
+
+    .benefit-title { font-size: 1.4rem; font-weight: 800; margin-bottom: 0.7rem; letter-spacing: -0.01em; }
+
+    .benefit-desc { color: rgba(255,255,255,0.65); font-size: 0.95rem; line-height: 1.6; font-family: 'Poppins', sans-serif; }
+
+    #cta {
+      text-align: center; position: relative; overflow: hidden;
+    }
+
+    .cta-glow {
+      position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);
+      width: 600px; height: 400px;
+      background: radial-gradient(ellipse, rgba(255,45,85,0.1), transparent 70%);
+      pointer-events: none;
+    }
+
+    .cta-actions { display: flex; gap: 1.2rem; justify-content: center; flex-wrap: wrap; margin-top: 2rem; }
+
+    .btn-whatsapp {
+      display: flex; align-items: center; gap: 0.7rem;
+      background: #25D366; color: white; padding: 1rem 2.2rem;
+      border-radius: 2px; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; font-weight: 800; font-family: 'Poppins', sans-serif;
+      transition: box-shadow 0.3s;
+    }
+
+    .btn-whatsapp:hover { box-shadow: 0 0 40px rgba(37,211,102,0.35); }
+
+    #contact {
+      padding: 8vh clamp(1.5rem, 5vw, 6rem);
+    }
+
+    #contact .section-title { margin-bottom: 3rem; }
+
+    .contact-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; margin-top: 4vh;
+    }
+
+    .contact-info { display: flex; flex-direction: column; gap: 2rem; }
+
+    .contact-item { display: flex; flex-direction: column; gap: 0.4rem; }
+
+    .contact-label { font-family: 'Poppins', sans-serif; font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); font-weight: 700; }
+
+    .contact-value { font-size: 1rem; color: var(--text); font-family: 'Poppins', sans-serif; }
+
+    .contact-form { display: flex; flex-direction: column; gap: 1.2rem; }
+
+    .form-group { display: flex; flex-direction: column; gap: 0.5rem; }
+
+    .form-label { font-family: 'Poppins', sans-serif; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: rgba(255,255,255,0.6); font-weight: 600; }
+
+    .form-input, .form-textarea {
+      background: var(--card-bg); border: 1px solid var(--border); color: var(--text);
+      padding: 0.8rem 1rem; border-radius: 2px;
+      font-family: 'Space Grotesk', sans-serif; font-size: 0.85rem;
+      transition: border-color 0.2s; outline: none; width: 100%;
+    }
+
+    .form-input:focus, .form-textarea:focus { border-color: var(--red); }
+
+    .form-textarea { resize: vertical; min-height: 120px; }
+
+    .form-submit {
+      background: var(--red); color: white; padding: 1rem 2rem;
+      font-size: 0.8rem; letter-spacing: 0.15em; text-transform: uppercase; font-weight: 700;
+      border-radius: 2px; transition: box-shadow 0.3s; border: none; cursor: pointer;
+    }
+
+    .form-submit:hover { box-shadow: 0 0 40px var(--red-glow); }
+
+    footer {
+      padding: 4vh clamp(1.5rem, 5vw, 6rem) 3vh;
+      border-top: 1px solid var(--border);
+      text-align: center; color: rgba(255,255,255,0.5);
+    }
+
+    .footer-copy { font-family: 'Poppins', sans-serif; font-size: 0.75rem; font-weight: 500; }
+
+    /* Scroll-frame sections */
+    .scroll-frame-section { position: relative; margin: 0; padding: 0; }
+    #scroll-clocks { margin: 0; padding: 0; width: 100vw; margin-left: calc(-50vw + 50%); }
+    #scroll-aroma { margin: 0; padding: 0; width: 100vw; margin-left: calc(-50vw + 50%); }
+    .canvas-sticky {
+      position: sticky; top: 0; height: 100vh; overflow: hidden;
+      background: rgba(5,5,7,0.3); margin: 0; padding: 0;
+      width: 100vw; margin-left: calc(-50vw + 50%); margin-right: calc(-50vw + 50%);
+    }
+    .canvas-sticky canvas { position: absolute; left: 0; top: 0; display: block; width: 100%; height: 100%; opacity: 0.70; }
+
+    .canvas-sticky::after {
+      content: ''; position: absolute; bottom: 0; left: 0; right: 0; height: 72%;
+      background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.15) 30%, transparent 100%);
+      pointer-events: none; z-index: 6;
+    }
+    .canvas-sticky::before {
+      content: ''; position: absolute; top: 0; right: 0; bottom: 0; width: 50%;
+      background: linear-gradient(to left, rgba(0,0,0,0.2) 0%, transparent 100%);
+      pointer-events: none; z-index: 6;
+    }
+
+    .frame-slide {
+      position: absolute; z-index: 10; pointer-events: none;
+      opacity: 0; will-change: opacity, transform;
+    }
+    .frame-slide.pos-hero {
+      bottom: clamp(6vh, 10vh, 13vh);
+      left: clamp(1.5rem, 6vw, 7rem);
+      max-width: min(620px, 72vw);
+    }
+    .frame-slide.pos-feature {
+      bottom: clamp(6vh, 10vh, 13vh);
+      right: clamp(1.5rem, 6vw, 7rem);
+      max-width: min(360px, 42vw);
+      text-align: right;
+    }
+    .frame-slide.pos-cta {
+      bottom: clamp(6vh, 10vh, 13vh);
+      left: clamp(1.5rem, 6vw, 7rem);
+      right: clamp(1.5rem, 6vw, 7rem);
+      text-align: center;
+    }
+
+    .slide-eyebrow {
+      display: block; font-family: 'Poppins', sans-serif;
+      font-size: 0.7rem; letter-spacing: 0.25em;
+      text-transform: uppercase; color: var(--red); margin-bottom: 1.2rem; font-weight: 700;
+    }
+    .slide-title {
+      font-size: clamp(2.8rem, 7vw, 6.5rem); letter-spacing: -0.01em;
+      text-transform: uppercase; line-height: 1; color: #fff;
+      text-shadow: 0 2px 50px rgba(0,0,0,0.4); font-weight: 800;
+    }
+    .slide-sub {
+      font-family: 'Poppins', sans-serif; font-size: clamp(0.85rem, 1.3vw, 1.05rem);
+      color: rgba(255,255,255,0.55); margin-top: 1.2rem; line-height: 1.65; font-weight: 400;
+    }
+    .slide-divider { width: 2rem; height: 1px; background: var(--red); margin-bottom: 1.2rem; }
+    .slide-divider.end { margin-left: auto; }
+    .slide-label {
+      font-family: 'Poppins', sans-serif; font-size: 0.7rem; letter-spacing: 0.2em;
+      text-transform: uppercase; color: rgba(255,255,255,0.38); margin-bottom: 1rem; font-weight: 700;
+    }
+    .slide-feat-title {
+      font-size: clamp(1.6rem, 3vw, 2.5rem); letter-spacing: -0.01em;
+      text-transform: uppercase; line-height: 1; color: #fff; font-weight: 800;
+    }
+    .slide-feat-body {
+      font-family: 'Poppins', sans-serif; font-size: clamp(0.8rem, 1.1vw, 0.95rem);
+      color: rgba(255,255,255,0.45); margin-top: 1rem; line-height: 1.7; font-weight: 400;
+    }
+    .slide-cta-tag {
+      display: block; font-family: 'Poppins', sans-serif; font-size: 0.7rem;
+      letter-spacing: 0.25em; text-transform: uppercase; color: var(--red);
+      margin-bottom: 1.2rem; font-weight: 700;
+    }
+    .slide-cta-big {
+      font-size: clamp(2.5rem, 6vw, 6rem); letter-spacing: -0.01em;
+      text-transform: uppercase; line-height: 1; color: #fff; font-weight: 800;
+    }
+    .slide-cta-note {
+      font-family: 'Poppins', sans-serif; font-size: 0.8rem;
+      color: rgba(255,255,255,0.38); margin-top: 1.2rem;
+      letter-spacing: 0.1em; text-transform: uppercase; font-weight: 600;
+    }
+
+    .frame-loader {
+      position: absolute; inset: 0; z-index: 20; background: var(--bg);
+      display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1.2rem;
+    }
+    .frame-loader-name {
+      font-family: 'Bebas Neue', sans-serif; font-size: 1.2rem; letter-spacing: 0.3em; color: var(--muted);
+    }
+    .frame-loader-track {
+      width: min(320px, 75vw); height: 1px; background: var(--border); position: relative;
+    }
+    .frame-loader-bar { height: 100%; width: 0%; background: var(--red); transition: width 0.05s linear; }
+    .frame-loader-pct {
+      font-family: 'Inter', sans-serif; font-size: 0.7rem; letter-spacing: 0.2em;
+      text-transform: uppercase; color: var(--muted);
+    }
+
+    @media (max-width: 768px) {
+      .contact-grid { grid-template-columns: 1fr; }
+      .pricing-card.featured { transform: scale(1); }
+      .frame-slide.pos-feature { max-width: 52vw; }
+      .slide-feat-title { font-size: clamp(1.2rem, 5vw, 1.8rem); }
+      .slide-feat-body { font-size: 0.7rem; }
+    }
+  </style>
+</head>
+<body>
+  <div class="grain"></div>
+
+  <nav id="main-nav">
+    <div class="nav-logo">Arise<span>Pages</span></div>
+    <div class="nav-links">
+      <a href="#benefits">Por qué nosotros</a>
+      <a href="#examples">Ejemplos</a>
+      <a href="#pricing">Precios</a>
+      <a href="#contact" class="nav-cta">Contacto</a>
+    </div>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="hero-badge" id="hero-badge">
+        <div class="hero-badge-dot"></div>
+        <span>Conversión garantizada</span>
+      </div>
+      <p class="hero-eyebrow">Diseño que vende</p>
+      <h1 class="hero-title">
+        Tu página de ventas<br>
+        <span class="accent">lista en 7 días</span>
+      </h1>
+      <p class="hero-sub">
+        Webs premium que convierten visitantes en clientes.
+        Desde $100. Sin compromisos. Comienza hoy.
+      </p>
+      <div class="hero-actions">
+        <button class="btn-primary" onclick="document.getElementById('pricing').scrollIntoView()">
+          Ver Precios
+        </button>
+        <a href="https://wa.me/573507016717?text=Quiero%20una%20web%20que%20venda" class="btn-ghost">
+          Hablemos por WhatsApp
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="benefits">
+    <p class="section-eyebrow">Por qué nosotros</p>
+    <h2 class="section-title">Diseño que convierte<br>clientes en ventas</h2>
+    <div class="benefits">
+      <div class="benefit-card">
+        <div class="benefit-icon">⚡</div>
+        <h3 class="benefit-title">Rápido</h3>
+        <p class="benefit-desc">Tu página lista en 7 días. Sin esperas.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">💰</div>
+        <h3 class="benefit-title">Asequible</h3>
+        <p class="benefit-desc">Desde $100. Planes que se ajustan a ti.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🎯</div>
+        <h3 class="benefit-title">Efectivo</h3>
+        <p class="benefit-desc">Diseño que convierte visitantes en clientes.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">📱</div>
+        <h3 class="benefit-title">Responsivo</h3>
+        <p class="benefit-desc">Se ve perfecto en móvil, tablet y desktop.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🔒</div>
+        <h3 class="benefit-title">Es tuya</h3>
+        <p class="benefit-desc">Tú controlas tu página. Sin suscripciones.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">📊</div>
+        <h3 class="benefit-title">Medible</h3>
+        <p class="benefit-desc">Integración con Google Analytics incluida.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <!-- ── SCROLL-FRAME EXAMPLES ────────────────────────── -->
+  <section id="examples">
+    <p class="section-eyebrow">Ejemplos de trabajo</p>
+    <h2 class="section-title">Diseño que <span class="accent">impacta</span></h2>
+    <div class="examples-toolbar">
+      <button class="toolbar-btn active" data-example="clocks">Producto Premium</button>
+      <button class="toolbar-btn" data-example="airpods">Tienda Online</button>
+      <button class="toolbar-btn" data-example="aroma">Experiencia Inmersiva</button>
+      <a href="mailto:brayanoq26@gmail.com" class="toolbar-btn toolbar-email">
+        <span>✉️</span> Preguntar
+      </a>
+    </div>
+  </section>
+
+  <section class="scroll-frame-section" id="scroll-clocks" style="height: 340vh;">
+    <div class="canvas-sticky" id="sticky-clocks" style="margin: 0; padding: 0;">
+      <div class="frame-loader" id="loader-clocks">
+        <div class="frame-loader-name">EJEMPLO: PRODUCTO PREMIUM</div>
+        <div class="frame-loader-track"><div class="frame-loader-bar" id="bar-clocks"></div></div>
+        <div class="frame-loader-pct" id="pct-clocks">Cargando… 0%</div>
+      </div>
+      <canvas id="canvas-clocks"></canvas>
+      <div class="frame-slide pos-hero" id="sc-1">
+        <span class="slide-eyebrow">Presentación · Web de Conversión</span>
+        <h2 class="slide-title">Diseño que<br>vende</h2>
+        <p class="slide-sub">Tu marca se destaca<br>en la pantalla.</p>
+      </div>
+      <div class="frame-slide pos-feature" id="sc-2">
+        <div class="slide-divider end"></div>
+        <p class="slide-label">01 — Impacto</p>
+        <h3 class="slide-feat-title">Página que<br>convierte</h3>
+        <p class="slide-feat-body">Cada pixel optimizado<br>para ventas.</p>
+      </div>
+      <div class="frame-slide pos-cta" id="sc-3">
+        <span class="slide-cta-tag">Listo en 7 días</span>
+        <p class="slide-cta-big">Tu página<br>aquí</p>
+        <p class="slide-cta-note">Desde $299</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="scroll-frame-section" id="scroll-airpods" style="height: 380vh;">
+    <div class="canvas-sticky" id="sticky-airpods">
+      <div class="frame-loader" id="loader-airpods">
+        <div class="frame-loader-name">EJEMPLO: TIENDA PREMIUM</div>
+        <div class="frame-loader-track"><div class="frame-loader-bar" id="bar-airpods"></div></div>
+        <div class="frame-loader-pct" id="pct-airpods">Cargando… 0%</div>
+      </div>
+      <canvas id="canvas-airpods"></canvas>
+      <div class="frame-slide pos-hero" id="sa-1">
+        <span class="slide-eyebrow">Tienda Online · Animada</span>
+        <h2 class="slide-title">Diseño que<br>convierte</h2>
+        <p class="slide-sub">Animaciones smooth que mantienen<br>la atención del cliente.</p>
+      </div>
+      <div class="frame-slide pos-feature" id="sa-2">
+        <div class="slide-divider end"></div>
+        <p class="slide-label">01 — Experiencia</p>
+        <h3 class="slide-feat-title">Cada detalle,<br>cuenta</h3>
+        <p class="slide-feat-body">Animación fluida que guía<br>al cliente por tu producto.</p>
+      </div>
+      <div class="frame-slide pos-cta" id="sa-3">
+        <span class="slide-cta-tag">Desde $299 USD</span>
+        <p class="slide-cta-big">Listo para<br>vender</p>
+        <p class="slide-cta-note">Entrega en 7 días</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="scroll-frame-section" id="scroll-aroma" style="height: 340vh;">
+    <div class="canvas-sticky" id="sticky-aroma">
+      <div class="frame-loader" id="loader-aroma">
+        <div class="frame-loader-name">EJEMPLO: EXPERIENCIA INMERSIVA</div>
+        <div class="frame-loader-track"><div class="frame-loader-bar" id="bar-aroma"></div></div>
+        <div class="frame-loader-pct" id="pct-aroma">Cargando… 0%</div>
+      </div>
+      <canvas id="canvas-aroma"></canvas>
+      <div class="frame-slide pos-hero" id="sm-1">
+        <span class="slide-eyebrow">Experiencia · Conversión</span>
+        <h2 class="slide-title">Página que<br>impacta</h2>
+        <p class="slide-sub">Diseño que mantiene<br>la atención.</p>
+      </div>
+      <div class="frame-slide pos-feature" id="sm-2">
+        <div class="slide-divider end"></div>
+        <p class="slide-label">03 — Experiencia</p>
+        <h3 class="slide-feat-title">Narrativa<br>visual</h3>
+        <p class="slide-feat-body">Cada sección cuenta tu historia.<br>Cada detalle impulsa ventas.</p>
+      </div>
+      <div class="frame-slide pos-cta" id="sm-3">
+        <span class="slide-cta-tag">Crea la tuya ahora</span>
+        <p class="slide-cta-big">Empieza<br>hoy</p>
+        <p class="slide-cta-note">Respuesta en 2 horas</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="pricing">
+    <p class="section-eyebrow">Planes y precios</p>
+    <h2 class="section-title">Elige qué quieres<br>vender hoy</h2>
+    <div class="pricing-grid">
+      <div class="pricing-card">
+        <h3 class="plan-name">Básica</h3>
+        <div class="plan-price">$100<sup>/única</sup></div>
+        <p class="plan-desc">Perfecto para empezar</p>
+        <ul class="plan-features">
+          <li><strong>Una página</strong> para presentar tu negocio</li>
+          <li><strong>Contacto directo</strong> por WhatsApp y Email</li>
+          <li><strong>Formulario</strong> que captura interesados</li>
+          <li><strong>SEO base</strong> - estructura optimizada para Google (resultados dependen de contenido + competencia)</li>
+          <li><strong>Listo en 7 días</strong> - comienza a vender ya</li>
+        </ul>
+        <a href="https://wa.me/573507016717?text=Quiero%20el%20plan%20B%C3%A1sica" class="btn-primary">Empezar hoy</a>
+      </div>
+
+      <div class="pricing-card featured">
+        <h3 class="plan-name">Estándar</h3>
+        <div class="plan-price">$299<sup>/única</sup></div>
+        <p class="plan-desc">Más ventas, sin límites</p>
+        <ul class="plan-features">
+          <li><strong>Hasta 3 páginas</strong> - presentación, productos, contacto</li>
+          <li><strong>Recibe clientes en WhatsApp</strong> - responde al instante</li>
+          <li><strong>Videos integrados</strong> - incrusta videos de YouTube/Vimeo</li>
+          <li><strong>Formularios avanzados</strong> - captura datos que importan</li>
+          <li><strong>SEO optimizado</strong> - estructura + palabras clave (posicionamiento es gradual, depende de tu contenido)</li>
+          <li><strong>Listo en 7 días</strong> - impulsa tus ventas</li>
+        </ul>
+        <a href="https://wa.me/573507016717?text=Quiero%20el%20plan%20Est%C3%A1ndar" class="btn-primary">Elegir mejor opción</a>
+      </div>
+
+      <div class="pricing-card">
+        <h3 class="plan-name">Premium</h3>
+        <div class="plan-price" style="font-size: 1.8rem;">Personalizado</div>
+        <p class="plan-desc">Tu marca premium a medida</p>
+        <ul class="plan-features">
+          <li><strong>Diseño 100% personalizado</strong> según tu negocio</li>
+          <li><strong>Animaciones scroll premium</strong> - efectos GSAP, interactivos</li>
+          <li><strong>Integración total</strong> - WhatsApp y Email automatizado</li>
+          <li><strong>SEO estratégico</strong> - keywords, metadata, contenido (posicionamiento requiere tiempo + mejora continua)</li>
+          <li><strong>Entrega acelerada</strong> - listo en 5 días</li>
+          <li><strong>Soporte incluido</strong> - estamos contigo</li>
+        </ul>
+        <a href="https://wa.me/573507016717?text=Quiero%20el%20plan%20Premium%20-%20hablemos" class="btn-primary">Hablemos</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="cta">
+    <div class="cta-glow"></div>
+    <p class="section-eyebrow">¿Listo?</p>
+    <h2 class="section-title">Tu web de ventas<br><span style="color:var(--red)">empieza hoy</span></h2>
+    <p class="section-sub">Conversión garantizada. Sin contratos. Respuesta en menos de 2 horas.</p>
+    <div class="cta-actions">
+      <a href="https://wa.me/573507016717?text=Quiero%20una%20web%20que%20me%20venda%20más" class="btn-whatsapp">
+        <span>💬</span> Hablemos por WhatsApp
+      </a>
+      <a href="mailto:brayan.oviedo@ceiba.com.co?subject=Quiero%20una%20web%20que%20venda" class="btn-primary">
+        <span>✉️</span> Contactanos por Email
+      </a>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="contact">
+    <p class="section-eyebrow">Contacto</p>
+    <h2 class="section-title">Hablemos de<br>tu negocio</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="contact-item">
+          <span class="contact-label">WhatsApp</span>
+          <a href="https://wa.me/573507016717" class="contact-value">+57 350 701 6717</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Email</span>
+          <a href="mailto:brayan.oviedo@ceiba.com.co" class="contact-value">brayan.oviedo@ceiba.com.co</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Cobertura</span>
+          <span class="contact-value">Colombia · Nacional</span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-label">Respuesta</span>
+          <span class="contact-value">Menos de 2 horas</span>
+        </div>
+      </div>
+      <form class="contact-form" onsubmit="handleForm(event)">
+        <div class="form-group">
+          <label class="form-label">Tu nombre</label>
+          <input class="form-input" type="text" name="name" placeholder="Nombre" required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">WhatsApp o Email</label>
+          <input class="form-input" type="text" name="contact" placeholder="+57..." required>
+        </div>
+        <div class="form-group">
+          <label class="form-label">Cuéntame sobre tu negocio</label>
+          <textarea class="form-textarea" name="message" placeholder="¿Qué vendes? ¿A quién? ¿Qué es lo más importante para ti?"></textarea>
+        </div>
+        <button type="submit" class="form-submit">Hagamos tu página →</button>
+      </form>
+    </div>
+  </section>
+
+  <div class="divider"></div>
+
+  <section id="faq" style="padding: 8vh clamp(1.5rem, 5vw, 6rem);">
+    <p class="section-eyebrow">Preguntas frecuentes</p>
+    <h2 class="section-title">Dudas comunes</h2>
+    <div style="display: grid; gap: 2rem; margin-top: 3rem; max-width: 800px; margin-left: auto; margin-right: auto;">
+      <div style="border-left: 2px solid var(--red); padding-left: 1.5rem;">
+        <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--red);">¿En cuánto tiempo está lista mi web?</h3>
+        <p style="color: rgba(255,255,255,0.7); line-height: 1.6;">Básica en 7 días, Estándar en 7 días, Premium en 5 días. Comenzamos al recibir el primer pago.</p>
+      </div>
+      <div style="border-left: 2px solid var(--red); padding-left: 1.5rem;">
+        <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--red);">¿Puedo modificar la web después?</h3>
+        <p style="color: rgba(255,255,255,0.7); line-height: 1.6;">Sí. Es tuya. Haz cambios cuando quieras. Después de 15 días: soporte a acordar (según necesidades).</p>
+      </div>
+      <div style="border-left: 2px solid var(--red); padding-left: 1.5rem;">
+        <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--red);">¿Incluye hosting?</h3>
+        <p style="color: rgba(255,255,255,0.7); line-height: 1.6;"><strong>Básica:</strong> Nosotros subimos a Vercel gratis (tu web online al instante). <strong>Estándar & Premium:</strong> Hosting profesional incluido. Web lista para vender.</p>
+      </div>
+      <div style="border-left: 2px solid var(--red); padding-left: 1.5rem;">
+        <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--red);">¿Cuál plan me conviene?</h3>
+        <p style="color: rgba(255,255,255,0.7); line-height: 1.6;"><strong>Básica:</strong> 1 producto. <strong>Estándar:</strong> 2-3 productos + videos. <strong>Premium:</strong> Marca premium, animations.</p>
+      </div>
+      <div style="border-left: 2px solid var(--red); padding-left: 1.5rem;">
+        <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--red);">¿Garantizan posicionamiento en Google?</h3>
+        <p style="color: rgba(255,255,255,0.7); line-height: 1.6;">Tu web estará optimizada para SEO. Pero el posicionamiento depende de: competencia, contenido de calidad, tiempo, autoridad de dominio. No hay garantías en SEO. Nosotros hacemos la base sólida.</p>
+      </div>
+      <div style="border-left: 2px solid var(--red); padding-left: 1.5rem;">
+        <h3 style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: var(--red);">¿Me devuelves el dinero si no me gusta?</h3>
+        <p style="color: rgba(255,255,255,0.7); line-height: 1.6;">100% de reembolso antes de comenzar. Después del 50%, aplican términos del contrato.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-bottom: 2rem; font-size: 0.85rem;">
+      <a href="terms.html" style="color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s;">Términos</a>
+      <a href="privacy.html" style="color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s;">Privacidad</a>
+      <a href="https://wa.me/573507016717" style="color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s;">Soporte</a>
+    </div>
+    <p class="footer-copy">© 2026 ArisePages. Colombia.</p>
+  </footer>
+
+  <script>
+    // Nav scroll effect
+    const nav = document.getElementById('main-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 80);
+    });
+
+    // Hero animations
+    window.addEventListener('load', () => {
+      const tl = gsap.timeline({ delay: 0.2 });
+      tl.to('#hero-badge', { opacity: 1, duration: 0.6, ease: 'power2.out' }, 0)
+        .to('.hero-eyebrow', { opacity: 1, duration: 0.6 }, 0.1)
+        .to('.hero-sub', { opacity: 1, duration: 0.6 }, 0.15)
+        .to('.hero-actions', { opacity: 1, duration: 0.6 }, 0.2);
+    });
+
+    // Form handler
+    function handleForm(e) {
+      e.preventDefault();
+      const form = e.target;
+      const name = new FormData(form).get('name');
+      const contact = new FormData(form).get('contact');
+      const message = encodeURIComponent(new FormData(form).get('message'));
+      const text = `Hola%2C%20soy%20${encodeURIComponent(name)}.%20${message}%20Contacto%3A%20${encodeURIComponent(contact)}`;
+      window.open(`https://wa.me/573507016717?text=${text}`, '_blank');
+    }
+
+    // Scroll-frame player
+    function createScrollFramePlayer({ sectionId, canvasId, loaderId, barId, pctId, framesPath, frameCount, frameExt, frameW, frameH, slides }) {
+      const section = document.getElementById(sectionId);
+      const canvas = document.getElementById(canvasId);
+      const loaderEl = document.getElementById(loaderId);
+      const barEl = document.getElementById(barId);
+      const pctEl = document.getElementById(pctId);
+      const ctx = canvas.getContext('2d');
+      const slideEls = (slides || []).map(s => ({ el: document.getElementById(s.id), from: s.from, to: s.to }));
+      const isPortrait = frameH > frameW;
+
+      let cvW = 0, cvH = 0, dpr = 1;
+      let fgW = 0, fgH = 0, fgX = 0, fgY = 0;
+      let frames = [], loaded = 0, currentFrame = -1, animRunning = false;
+
+      function resizeCanvas() {
+        dpr = window.devicePixelRatio || 1;
+        cvW = window.innerWidth;
+        cvH = window.innerHeight;
+        const aspect = frameW / frameH;
+        const vpAspect = cvW / cvH;
+
+        if (isPortrait) {
+          fgH = cvH; fgW = cvH * aspect;
+          fgX = (cvW - fgW) / 2; fgY = 0;
+        } else {
+          if (aspect < vpAspect) { fgW = cvW; fgH = cvW / aspect; }
+          else { fgH = cvH; fgW = cvH * aspect; }
+          fgX = (cvW - fgW) / 2; fgY = (cvH - fgH) / 2;
+        }
+
+        canvas.width = Math.round(cvW * dpr);
+        canvas.height = Math.round(cvH * dpr);
+        canvas.style.width = cvW + 'px';
+        canvas.style.height = cvH + 'px';
+        ctx.scale(dpr, dpr);
+        if (frames[currentFrame] && frames[currentFrame].complete) drawFrame(frames[currentFrame]);
+      }
+
+      function drawFrame(img) {
+        ctx.clearRect(0, 0, cvW, cvH);
+        ctx.drawImage(img, fgX, fgY, fgW, fgH);
+      }
+
+      function onAllLoaded() {
+        loaderEl.style.transition = 'opacity 0.6s ease';
+        loaderEl.style.opacity = '0';
+        setTimeout(() => { loaderEl.style.display = 'none'; }, 650);
+        const startIdx = frameCount - 1;
+        drawFrame(frames[startIdx]);
+        currentFrame = startIdx;
+        startAnimation();
+      }
+
+      function startAnimation() {
+        if (animRunning) return;
+        animRunning = true;
+        loop();
+      }
+
+      function loop() {
+        requestAnimationFrame(loop);
+        const rect = section.getBoundingClientRect();
+        const scrolled = -rect.top;
+        const total = rect.height - window.innerHeight;
+        if (total <= 0) return;
+        const progress = Math.max(0, Math.min(1, scrolled / total));
+        const idx = Math.max(0, frameCount - 1 - Math.floor(progress * frameCount));
+        if (idx !== currentFrame && frames[idx] && frames[idx].complete) {
+          currentFrame = idx;
+          drawFrame(frames[idx]);
+        }
+        const FADE = 0.06;
+        slideEls.forEach(({ el, from, to }) => {
+          if (!el) return;
+          let opa = 0;
+          if (progress >= from && progress <= to) {
+            if (progress < from + FADE) opa = (progress - from) / FADE;
+            else if (progress > to - FADE) opa = (to - progress) / FADE;
+            else opa = 1;
+          }
+          opa = Math.max(0, Math.min(1, opa));
+          const ty = progress < from + FADE && progress >= from ? (1 - opa) * 38 : progress > to - FADE && progress <= to ? (1 - opa) * -38 : 0;
+          el.style.opacity = opa;
+          el.style.transform = `translateY(${ty}px)`;
+        });
+      }
+
+      function startLoading() {
+        resizeCanvas();
+        window.addEventListener('resize', resizeCanvas);
+
+        // Timeout: hide loader after 5 seconds if frames don't load
+        setTimeout(() => {
+          if (loaderEl && loaderEl.style.display !== 'none') {
+            loaderEl.style.opacity = '0';
+            loaderEl.style.transition = 'opacity 0.6s ease';
+            setTimeout(() => { loaderEl.style.display = 'none'; }, 650);
+          }
+        }, 5000);
+
+        frames = Array.from({ length: frameCount }, (_, i) => {
+          const img = new Image();
+          img.src = `${framesPath}frame_${String(i + 1).padStart(4,'0')}.${frameExt}`;
+          img.onload = () => {
+            loaded++;
+            const pct = Math.round((loaded / frameCount) * 100);
+            barEl.style.width = pct + '%';
+            pctEl.textContent = `Cargando… ${pct}%`;
+            if (loaded === frameCount) onAllLoaded();
+          };
+          return img;
+        });
+      }
+
+      const observer = new IntersectionObserver(entries => {
+        if (entries[0].isIntersecting) {
+          observer.disconnect();
+          startLoading();
+        }
+      }, { rootMargin: '150% 0px' });
+      observer.observe(section);
+    }
+
+    function initScrollFrames() {
+      createScrollFramePlayer({
+        sectionId: 'scroll-clocks', canvasId: 'canvas-clocks',
+        loaderId: 'loader-clocks', barId: 'bar-clocks', pctId: 'pct-clocks',
+        framesPath: './frames/clocks/',
+        frameCount: 667, frameExt: 'jpg', frameW: 1280, frameH: 720,
+        slides: [
+          { id: 'sc-1', from: 0, to: 0.38 },
+          { id: 'sc-2', from: 0.32, to: 0.72 },
+          { id: 'sc-3', from: 0.66, to: 1.00 },
+        ],
+      });
+      createScrollFramePlayer({
+        sectionId: 'scroll-airpods', canvasId: 'canvas-airpods',
+        loaderId: 'loader-airpods', barId: 'bar-airpods', pctId: 'pct-airpods',
+        framesPath: './frames/airpods/',
+        frameCount: 476, frameExt: 'jpg', frameW: 720, frameH: 1280,
+        slides: [
+          { id: 'sa-1', from: 0, to: 0.38 },
+          { id: 'sa-2', from: 0.32, to: 0.72 },
+          { id: 'sa-3', from: 0.66, to: 1.00 },
+        ],
+      });
+      createScrollFramePlayer({
+        sectionId: 'scroll-aroma', canvasId: 'canvas-aroma',
+        loaderId: 'loader-aroma', barId: 'bar-aroma', pctId: 'pct-aroma',
+        framesPath: './frames/aroma/',
+        frameCount: 667, frameExt: 'jpg', frameW: 1280, frameH: 720,
+        slides: [
+          { id: 'sm-1', from: 0, to: 0.38 },
+          { id: 'sm-2', from: 0.32, to: 0.72 },
+          { id: 'sm-3', from: 0.66, to: 1.00 },
+        ],
+      });
+    }
+
+    // Examples toolbar
+    document.querySelectorAll('.toolbar-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const example = btn.getAttribute('data-example');
+        const sectionId = example === 'clocks' ? 'scroll-clocks' :
+                          example === 'airpods' ? 'scroll-airpods' : 'scroll-aroma';
+        document.querySelectorAll('.toolbar-btn').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const section = document.getElementById(sectionId);
+        if (section) section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+
+    window.addEventListener('load', () => {
+      // Init scroll frames
+      try {
+        initScrollFrames();
+      } catch (e) {
+        console.warn('Frames error:', e);
+      }
+
+      // Init animations
+      try {
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Animar benefit cards
+        document.querySelectorAll('.benefit-card').forEach((el, i) => {
+          gsap.from(el, {
+            scrollTrigger: {
+              trigger: '#benefits',
+              start: 'top 85%',
+              toggleActions: 'play reverse play reverse',
+            },
+            opacity: 0,
+            y: 30,
+            duration: 0.6,
+            delay: i * 0.08,
+            ease: 'power2.out',
+          });
+        });
+
+        // Animar pricing cards
+        document.querySelectorAll('.pricing-card').forEach((el, i) => {
+          gsap.from(el, {
+            scrollTrigger: {
+              trigger: '#pricing',
+              start: 'top 85%',
+              toggleActions: 'play reverse play reverse',
+            },
+            opacity: 0,
+            y: 30,
+            duration: 0.6,
+            delay: i * 0.08,
+            ease: 'power2.out',
+          });
+        });
+
+        // Animar contact items
+        document.querySelectorAll('.contact-item').forEach((el, i) => {
+          gsap.from(el, {
+            scrollTrigger: {
+              trigger: '#contact',
+              start: 'top 85%',
+              toggleActions: 'play reverse play reverse',
+            },
+            opacity: 0,
+            y: 30,
+            duration: 0.6,
+            delay: i * 0.08,
+            ease: 'power2.out',
+          });
+        });
+
+        // Botones hover
+        document.querySelectorAll('.btn-primary, .btn-ghost, .nav-cta').forEach(btn => {
+          btn.addEventListener('mouseenter', () => {
+            gsap.to(btn, { scale: 1.05, duration: 0.2 });
+          });
+          btn.addEventListener('mouseleave', () => {
+            gsap.to(btn, { scale: 1, duration: 0.2 });
+          });
+        });
+
+        // Parallax hero
+        const heroBg = document.querySelector('.hero-bg');
+        if (heroBg) {
+          gsap.to(heroBg, {
+            scrollTrigger: {
+              trigger: '#hero',
+              start: 'top top',
+              end: 'bottom top',
+              scrub: 0.5,
+            },
+            y: 50,
+            ease: 'none',
+          });
+        }
+
+        // Badge floating
+        const badge = document.getElementById('hero-badge');
+        if (badge) {
+          gsap.to(badge, {
+            y: -10,
+            duration: 3,
+            repeat: -1,
+            yoyo: true,
+            ease: 'sine.inOut',
+          });
+        }
+      } catch (e) {
+        console.error('Animations error:', e);
+      }
+    });
+  </script>
+</body>
+</html>

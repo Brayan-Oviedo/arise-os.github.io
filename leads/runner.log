@@ -1,0 +1,326 @@
+/Users/fantasma/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[INFO] LeadOS PRO | google_maps | tienda audífonos accesorios audio @ Bogotá Colombia | limit:50
+[INFO] Google Maps: https://www.google.com/maps/search/tienda+aud%C3%ADfonos+accesorios+audio+Bogot%C3%A1+Colombia/?hl=en
+[2026-06-11 17:25:23] INFO: Fetched (200) <GET https://www.google.com/maps/search/tienda+aud%C3%ADfonos+accesorios+audio+Bogot%C3%A1+Colombia/?hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps: 10 article elements
+[INFO] Maps: 10 stubs to enrich via detail pages
+[INFO] Maps detail: Super Audio - Pro Audio
+[2026-06-11 17:25:31] INFO: Fetched (200) <GET https://www.google.com/maps/place/Super+Audio+-+Pro+Audio/data=!4m7!3m6!1s0x8e3f9b605ce2b919:0xa0fd866f7ff485e9!8m2!3d4.6067194!4d-74.0728609!16s%2Fg%2F11dx9tln57!19sChIJGbniXGCbP44R6YX0f2-G_aA?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Audiófilo Store
+[2026-06-11 17:25:40] INFO: Fetched (200) <GET https://www.google.com/maps/place/Audi%C3%B3filo+Store/@4.7065115,-74.0488857,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f9b6e9f2b4599:0xaa0328fd4a9922c0!8m2!3d4.7065115!4d-74.0488857!16s%2Fg%2F11hsnbt5r0?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Unilago local 2286 parlantes , audifonos , JBL , bose , Sony , video beans , portátil , Xbox , play , pc ,
+[2026-06-11 17:25:47] INFO: Fetched (200) <GET https://www.google.com/maps/place/Unilago+local+2286+parlantes+,+audifonos+,+JBL+,+bose+,+Sony+,+video+beans+,+port%C3%A1til+,+Xbox+,+play+,+pc+,/data=!4m7!3m6!1s0x8e3f9b109827e5d1:0x55590b31ad30df3e!8m2!3d4.6649589!4d-74.0584452!16s%2Fg%2F11kqw82553!19sChIJ0eUnmBCbP44RPt8wrTELWVU?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Puerta del Sol Business Park
+[2026-06-11 17:25:55] INFO: Fetched (200) <GET https://www.google.com/maps/place/Puerta+del+Sol+Business+Park/data=!4m7!3m6!1s0x8e3f9b605ce2b919:0x790fe4451ecd4fc9!8m2!3d4.6860751!4d-74.1213518!16s%2Fg%2F1ptx2ctdg!19sChIJGbniXGCbP44RyU_NHkXkD3k?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Audiotienda.co I Centro auditivo multimarca
+[2026-06-11 17:26:03] INFO: Fetched (200) <GET https://www.google.com/maps/place/Audiotienda.co+I+Centro+auditivo+multimarca/data=!4m7!3m6!1s0x8e3f850a45c5ae49:0x2bac79fb4a3053d7!8m2!3d4.712182!4d-74.0715849!16s%2Fg%2F11gxn54trt!19sChIJSa7FRQqFP44R11MwSvt5rCs?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Audiocentro Electronics
+[2026-06-11 17:26:13] INFO: Fetched (200) <GET https://www.google.com/maps/place/Audiocentro+Electronics/data=!4m7!3m6!1s0x8e3f999f5d9c7f1f:0xd1be0a0e764f1ac8!8m2!3d4.6072281!4d-74.0726131!16s%2Fg%2F1tc_xnj6!19sChIJH3-cXZ-ZP44RyBpPdg4KvtE?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: La Tienda de Audio
+[2026-06-11 17:26:21] INFO: Fetched (200) <GET https://www.google.com/maps/place/La+Tienda+de+Audio/data=!4m7!3m6!1s0x8e3f9b75ddedc50b:0x33d9c38b71753590!8m2!3d4.6347984!4d-74.0785473!16s%2Fg%2F11j31v_0zd!19sChIJC8Xt3XWbP44RkDV1cYvD2TM?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Sonido y Accesorios
+[2026-06-11 17:26:39] INFO: Fetched (200) <GET https://www.google.com/maps/place/Sonido+y+Accesorios/@4.6070612,-74.0729485,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f999f63d9d253:0xd1d68c5b3e79a851!8m2!3d4.6070612!4d-74.0729485!16s%2Fg%2F11hbr6fjk9?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Audiocentro Studio
+[2026-06-11 17:26:46] INFO: Fetched (200) <GET https://www.google.com/maps/place/Audiocentro+Studio/@4.6864673,-74.0959108,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f9b15edad920d:0x3e837195adee22d6!8m2!3d4.6864673!4d-74.0959108!16s%2Fg%2F1ptxtk277?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Audiocentro Mega
+[2026-06-11 17:26:54] INFO: Fetched (200) <GET https://www.google.com/maps/place/Audiocentro+Mega/data=!4m7!3m6!1s0x8e3f997a17965651:0xd9cf80134f29b43b!8m2!3d4.607766!4d-74.072463!16s%2Fg%2F11h598yyvd!19sChIJUVaWF3qZP44RO7QpTxOAz9k?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Done. 10 leads | 11 requests
+/Users/fantasma/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[INFO] LeadOS PRO | google_maps | tienda audífonos auriculares @ Medellín Colombia | limit:50
+[INFO] Google Maps: https://www.google.com/maps/search/tienda+aud%C3%ADfonos+auriculares+Medell%C3%ADn+Colombia/?hl=en
+[2026-06-11 17:27:03] INFO: Fetched (200) <GET https://www.google.com/maps/search/tienda+aud%C3%ADfonos+auriculares+Medell%C3%ADn+Colombia/@6.2166618,-75.5792108,13z/data=!3m1!4b1?hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps: 9 article elements
+[INFO] Maps: 9 stubs to enrich via detail pages
+[INFO] Maps detail: GAES Medellín Laureles
+[2026-06-11 17:27:15] INFO: Fetched (200) <GET https://www.google.com/maps/place/GAES+Medell%C3%ADn+Laureles/@6.238702,-75.60068,17z/data=!3m1!4b1!4m6!3m5!1s0x8e44298556ddba11:0x4f5ebe2e8564fd29!8m2!3d6.238702!4d-75.60068!16s%2Fg%2F11fm6q1y3_?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: GAES Medellín El Poblado
+[2026-06-11 17:27:24] INFO: Fetched (200) <GET https://www.google.com/maps/place/GAES+Medell%C3%ADn+El+Poblado/data=!4m7!3m6!1s0x8e4683981450f4d5:0xac8166772d825a1f!8m2!3d6.204166!4d-75.570882!16s%2Fg%2F11hz2l24n0!19sChIJ1fRQFJiDRo4RH1qCLXdmgaw?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Benoit Audífonos Las Americas | Clínica de Audiología
+[2026-06-11 17:27:41] INFO: Fetched (200) <GET https://www.google.com/maps/place/Benoit+Aud%C3%ADfonos+Las+Americas+%7C+Cl%C3%ADnica+de+Audiolog%C3%ADa/@6.2140122,-75.5949832,17z/data=!3m1!4b1!4m6!3m5!1s0x8e442915b4cb907f:0xebbb2860ab8e0ed!8m2!3d6.2140122!4d-75.5949832!16s%2Fg%2F11y498tmbn?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Oigamos Sede Poblado, Centro y Rionegro - Audífonos, Tinnitus, Hipoacusia, Audiometría, Vértigo
+[2026-06-11 17:27:50] INFO: Fetched (200) <GET https://www.google.com/maps/place/Oigamos+Sede+Poblado,+Centro+y+Rionegro+-+Aud%C3%ADfonos,+Tinnitus,+Hipoacusia,+Audiometr%C3%ADa,+V%C3%A9rtigo/data=!4m7!3m6!1s0x8e468293d3619ff9:0xb097fd5996791e!8m2!3d6.2061798!4d-75.5704779!16s%2Fg%2F11h_1qjz23!19sChIJ-Z9h05OCRo4RHnmWWf2XsAA?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Oire Florida | Tienda especializada en audífonos y pérdida de audición
+[2026-06-11 17:27:57] INFO: Fetched (200) <GET https://www.google.com/maps/place/Oire+Florida+%7C+Tienda+especializada+en+aud%C3%ADfonos+y+p%C3%A9rdida+de+audici%C3%B3n/data=!4m7!3m6!1s0x8e4429593167dc01:0x4222297522331fcf!8m2!3d6.2731114!4d-75.5766265!16s%2Fg%2F11xnw_qzt3!19sChIJAdxnMVkpRI4Rzx8zInUpIkI?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: GAES Medellín Industriales
+[2026-06-11 17:28:05] INFO: Fetched (200) <GET https://www.google.com/maps/place/GAES+Medell%C3%ADn+Industriales/data=!4m7!3m6!1s0x8e4429f07681eaeb:0xddea9b954247c254!8m2!3d6.2304206!4d-75.5739467!16s%2Fg%2F11kq2y7yjy!19sChIJ6-qBdvApRI4RVMJHQpWb6t0?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: MacGyber El Original | Servicio Tecnico Multimarcas| Reparacion Electronicas en General Medellin
+[2026-06-11 17:28:12] INFO: Fetched (200) <GET https://www.google.com/maps/place/MacGyber+El+Original+%7C+Servicio+Tecnico+Multimarcas%7C+Reparacion+Electronicas+en+General+Medellin/data=!4m7!3m6!1s0x8e4429de383917b7:0x9e62adeb653d3c12!8m2!3d6.2141754!4d-75.5770836!16s%2Fg%2F11g0h_nn02!19sChIJtxc5ON4pRI4REjw9ZeutYp4?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Audiocentro Medellín
+[2026-06-11 17:28:21] INFO: Fetched (200) <GET https://www.google.com/maps/place/Audiocentro+Medell%C3%ADn/@6.23212,-75.5687559,17z/data=!3m1!4b1!4m6!3m5!1s0x8e4429254aeb1f25:0xf506e3db5531ae0e!8m2!3d6.23212!4d-75.5687559!16s%2Fg%2F11w_vg9ngl?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Oigamos Sede Centro - Audífonos, Centro de Tinnitus, Hipoacusia, Audiometría, Vértigo, Impedanciometría, Fonoaudiología
+[2026-06-11 17:28:41] INFO: Fetched (200) <GET https://www.google.com/maps/place/Oigamos+Sede+Centro+-+Aud%C3%ADfonos,+Centro+de+Tinnitus,+Hipoacusia,+Audiometr%C3%ADa,+V%C3%A9rtigo,+Impedanciometr%C3%ADa,+Fonoaudiolog%C3%ADa/@6.2512839,-75.5639001,17z/data=!3m1!4b1!4m6!3m5!1s0x8e44296f8f3e8b13:0x3badcdfbbcd3d00c!8m2!3d6.2512839!4d-75.5639001!16s%2Fg%2F11w_kt33_c?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Done. 9 leads | 10 requests
+/Users/fantasma/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[INFO] LeadOS PRO | google_maps | tienda audio bluetooth tecnología @ Cali Colombia | limit:50
+[INFO] Google Maps: https://www.google.com/maps/search/tienda+audio+bluetooth+tecnolog%C3%ADa+Cali+Colombia/?hl=en
+[2026-06-11 17:29:20] ERROR: Error waiting for selector [role="feed"]: Locator.wait_for: Timeout 30000ms exceeded.
+Call log:
+  - waiting for locator("[role=\"feed\"]").first
+
+[2026-06-11 17:29:20] INFO: Fetched (200) <GET https://www.google.com/maps/place/C%26C+Electr%C3%B3nica/@3.4521532,-76.5286654,17z/data=!3m1!4b1!4m6!3m5!1s0x8e30a667cb9823c5:0x93d50f55bd485206!8m2!3d3.4521532!4d-76.5286654!16s%2Fg%2F1z44b9yh8?hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps: 0 article elements
+[INFO] Maps: 0 stubs to enrich via detail pages
+[INFO] Done. 0 leads | 1 requests
+/Users/fantasma/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[INFO] LeadOS PRO | instagram | tienda audífonos colombia @ Colombia | limit:50
+[INFO] Instagram warmup...
+[2026-06-11 17:29:28] INFO: Fetched (200) <GET https://www.instagram.com/> (referer: https://www.google.com/search?q=instagram)
+[2026-06-11 17:29:34] INFO: Fetched (200) <GET https://html.duckduckgo.com/html/?q=tienda+aud%C3%ADfonos+colombia+Colombia+site%3Ainstagram.com> (referer: https://www.google.com/search?q=duckduckgo)
+[INFO] IG discover: 10 handles
+[INFO] IG: 10 profiles to check
+[2026-06-11 17:29:44] INFO: Fetched (200) <GET https://www.instagram.com/audifonos_colombia/> (referer: https://www.google.com/search?q=instagram)
+[INFO] @audifonos_colombia followers:3829 contact:None
+[2026-06-11 17:29:53] INFO: Fetched (200) <GET https://www.instagram.com/audiofilostore/> (referer: https://www.google.com/search?q=instagram)
+[INFO] @audiofilostore followers:14000 contact:None
+[2026-06-11 17:30:05] INFO: Fetched (200) <GET https://www.instagram.com/audifonoscolombia/> (referer: https://www.google.com/search?q=instagram)
+[INFO] @audifonoscolombia followers:1084 contact:None
+[2026-06-11 17:30:15] INFO: Fetched (200) <GET https://www.instagram.com/beatscolm/> (referer: https://www.google.com/search?q=instagram)
+[INFO] @beatscolm followers:1644 contact:None
+[2026-06-11 17:30:25] INFO: Fetched (200) <GET https://www.instagram.com/kzacousticsbogota/> (referer: https://www.google.com/search?q=instagram)
+[INFO] @kzacousticsbogota followers:798 contact:+3166266648
+[2026-06-11 17:30:34] INFO: Fetched (200) <GET https://www.instagram.com/magno.co_/> (referer: https://www.google.com/search?q=instagram)
+[2026-06-11 17:30:43] INFO: Fetched (200) <GET https://www.instagram.com/draudio.latienda.bogota/> (referer: https://www.google.com/search?q=instagram)
+[INFO] @draudio.latienda.bogota followers:4192 contact:None
+[2026-06-11 17:30:50] INFO: Fetched (200) <GET https://www.instagram.com/tiendawefone/> (referer: https://www.google.com/search?q=instagram)
+[INFO] @tiendawefone followers:7847 contact:None
+[2026-06-11 17:30:57] INFO: Fetched (200) <GET https://www.instagram.com/_audifonos.colombia_/> (referer: https://www.google.com/search?q=instagram)
+[2026-06-11 17:31:04] INFO: Fetched (200) <GET https://www.instagram.com/hdtecmarket/> (referer: https://www.google.com/search?q=instagram)
+[INFO] Done. 7 leads | 12 requests
+/Users/fantasma/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[INFO] LeadOS PRO | google_maps | relojería relojes joyas @ Bogotá Colombia | limit:50
+[INFO] Google Maps: https://www.google.com/maps/search/relojer%C3%ADa+relojes+joyas+Bogot%C3%A1+Colombia/?hl=en
+[2026-06-11 17:31:14] INFO: Fetched (200) <GET https://www.google.com/maps/search/relojer%C3%ADa+relojes+joyas+Bogot%C3%A1+Colombia/@4.6765712,-74.0904462,12z/data=!3m1!4b1?hl=en&entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps: 11 article elements
+[INFO] Maps: 11 stubs to enrich via detail pages
+[INFO] Maps detail: Relojes Golden Store
+[2026-06-11 17:31:23] INFO: Fetched (200) <GET https://www.google.com/maps/place/Relojes+Golden+Store/data=!4m7!3m6!1s0x8e3f99dc6756fba9:0x6b8f7f016605144f!8m2!3d4.6053095!4d-74.0887369!16s%2Fg%2F11vwvk45y1!19sChIJqftWZ9yZP44RTxQFZgF_j2s?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Joyería y Relojeria la Novena Cra 9 # 15- 52
+[2026-06-11 17:31:32] INFO: Fetched (200) <GET https://www.google.com/maps/place/Joyer%C3%ADa+y+Relojeria+la+Novena+Cra+9+%23+15-+52/data=!4m7!3m6!1s0x8e3f99a0e8696435:0xdceec04f4678024c!8m2!3d4.6031853!4d-74.074848!16s%2Fg%2F11fx89ld8f!19sChIJNWRp6KCZP44RTAJ4Rk_A7tw?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Joyeria Bauer Centro 93 - Distribuidor Oficial Rolex
+[2026-06-11 17:31:40] INFO: Fetched (200) <GET https://www.google.com/maps/place/Joyeria+Bauer+Centro+93+-+Distribuidor+Oficial+Rolex/data=!4m7!3m6!1s0x8e3f9a8aaf56d74d:0xd7a6fe77e69e4d73!8m2!3d4.6772333!4d-74.0513815!16s%2Fg%2F1pzwzqnj5!19sChIJTddWr4qaP44Rc02e5nf-ptc?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Joyería el Dorado Bogotá
+[2026-06-11 17:31:48] INFO: Fetched (200) <GET https://www.google.com/maps/place/Joyer%C3%ADa+el+Dorado+Bogot%C3%A1/data=!4m7!3m6!1s0x8e3f990a418f146d:0xf3d0fd90b6335895!8m2!3d4.6028719!4d-74.0786594!16s%2Fg%2F1q4kp6njl!19sChIJbRSPQQqZP44RlVgztpD90PM?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Joyería y Relojería El Chibcha Dorado
+[2026-06-11 17:32:03] INFO: Fetched (200) <GET https://www.google.com/maps/place/Joyer%C3%ADa+y+Relojer%C3%ADa+El+Chibcha+Dorado/@4.5996946,-74.0737638,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f99a6fe957989:0x42d7050fc15c07f5!8m2!3d4.5996946!4d-74.0737638!16s%2Fg%2F11b7q4mqlj?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Taller de Joyería y Relojería ALUVION
+[2026-06-11 17:32:12] INFO: Fetched (200) <GET https://www.google.com/maps/place/Taller+de+Joyer%C3%ADa+y+Relojer%C3%ADa+ALUVION/data=!4m7!3m6!1s0x8e3f85806d250be9:0xb41ce50e0a0737b0!8m2!3d4.7541582!4d-74.0548268!16s%2Fg%2F1ptxks1p2!19sChIJ6QslbYCFP44RsDcHCg7lHLQ?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Relojería Ginebra
+[2026-06-11 17:32:21] INFO: Fetched (200) <GET https://www.google.com/maps/place/Relojer%C3%ADa+Ginebra/data=!4m7!3m6!1s0x8e3f99a1729e42e7:0xa9a95e84b372e873!8m2!3d4.6038392!4d-74.0724231!16s%2Fg%2F11b7q785m2!19sChIJ50KecqGZP44Rc-hys4Reqak?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Relojería RT San Andresito 38
+[2026-06-11 17:32:32] INFO: Fetched (200) <GET https://www.google.com/maps/place/Relojer%C3%ADa+RT+San+Andresito+38/data=!4m7!3m6!1s0x8e3f99a2a6ee6b75:0x6a11877d53338b1d!8m2!3d4.6156929!4d-74.1024297!16s%2Fg%2F11qpbskcxd!19sChIJdWvupqKZP44RHYszU32HEWo?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Ritz Joyas y relojes
+[2026-06-11 17:32:40] INFO: Fetched (200) <GET https://www.google.com/maps/place/Ritz+Joyas+y+relojes/data=!4m7!3m6!1s0x8e3f855be4283149:0x4cc8322bc1762c2b!8m2!3d4.7196328!4d-74.0361171!16s%2Fg%2F11c5243tvv!19sChIJSTEo5FuFP44RKyx2wSsyyEw?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[SKIP] Ritz Joyas y relojes: no phone or website found
+[INFO] Maps detail: Relojería y Joyería Infinito
+[2026-06-11 17:32:48] INFO: Fetched (200) <GET https://www.google.com/maps/place/Relojer%C3%ADa+y+Joyer%C3%ADa+Infinito/@4.6944106,-74.0999041,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f9b38867e4941:0x534bd59ead1046d5!8m2!3d4.6944106!4d-74.0999041!16s%2Fg%2F11bycfgyzx?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Centro Orient
+[2026-06-11 17:32:56] INFO: Fetched (200) <GET https://www.google.com/maps/place/Centro+Orient/@4.5989841,-74.0738291,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f99a653bffe7b:0xcdd28e19b3bfeb62!8m2!3d4.5989841!4d-74.0738291!16s%2Fg%2F11b7q8h16m?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Done. 10 leads | 12 requests
+/Users/fantasma/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[INFO] LeadOS PRO | google_maps | tienda de relojes relojería @ Medellín Colombia | limit:50
+[INFO] Google Maps: https://www.google.com/maps/search/tienda+de+relojes+relojer%C3%ADa+Medell%C3%ADn+Colombia/?hl=en
+[2026-06-11 17:33:14] INFO: Fetched (200) <GET https://www.google.com/maps/search/tienda+de+relojes+relojer%C3%ADa+Medell%C3%ADn+Colombia/@6.2357158,-75.5780199,13z/data=!3m1!4b1?hl=en&entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps: 11 article elements
+[INFO] Maps: 11 stubs to enrich via detail pages
+[INFO] Maps detail: Relojería Milla De Oro
+[2026-06-11 17:33:21] INFO: Fetched (200) <GET https://www.google.com/maps/place/Relojer%C3%ADa+Milla+De+Oro/data=!4m7!3m6!1s0x8e46837c96435085:0x9b9ff2e9ec72a618!8m2!3d6.1994561!4d-75.575792!16s%2Fg%2F11h5q1hjqs!19sChIJhVBDlnyDRo4RGKZy7Onyn5s?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Joyería Orient - C.C Santafé
+[2026-06-11 17:33:28] INFO: Fetched (200) <GET https://www.google.com/maps/place/Joyer%C3%ADa+Orient+-+C.C+Santaf%C3%A9/data=!4m7!3m6!1s0x8e468262aaf4a90f:0x854e12c86eae9c2d!8m2!3d6.1968516!4d-75.5743396!16s%2Fg%2F1ptwx78sw!19sChIJD6n0qmKCRo4RLZyubsgSToU?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Watch Store and Repair
+[2026-06-11 17:33:39] INFO: Fetched (200) <GET https://www.google.com/maps/place/Watch+Store+and+Repair/@6.2509652,-75.5654919,17z/data=!3m1!4b1!4m6!3m5!1s0x8e468334fe3cba61:0xff555c41254bd5d9!8m2!3d6.2509652!4d-75.5654919!16s%2Fg%2F1pty3s756?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Time Square El Tesoro | Relojería en Medellín
+[2026-06-11 17:33:46] INFO: Fetched (200) <GET https://www.google.com/maps/place/Time+Square+El+Tesoro+%7C+Relojer%C3%ADa+en+Medell%C3%ADn/data=!4m7!3m6!1s0x8e46838bc0691b6f:0x16000be989dcfa52!8m2!3d6.1976668!4d-75.5606329!16s%2Fg%2F11fn52zxwc!19sChIJbxtpwIuDRo4RUvrciekLABY?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Joyeria Intercontinental - Distribuidor Oficial Rolex
+[2026-06-11 17:33:54] INFO: Fetched (200) <GET https://www.google.com/maps/place/Joyeria+Intercontinental+-+Distribuidor+Oficial+Rolex/data=!4m7!3m6!1s0x8e46829a64dabef5:0x4efddc7cbe443a8a!8m2!3d6.1974022!4d-75.5581021!16s%2Fg%2F1pty4vf3q!19sChIJ9b7aZJqCRo4RijpEvnzc_U4?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Multirelojes
+[2026-06-11 17:34:06] INFO: Fetched (200) <GET https://www.google.com/maps/place/Multirelojes/@6.2610583,-75.5897953,17z/data=!3m1!4b1!4m6!3m5!1s0x8e442910527654a7:0xf99c181347b7a494!8m2!3d6.2610583!4d-75.5897953!16s%2Fg%2F1tdq25fl?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Joyería y Relojería Estrella
+[2026-06-11 17:34:14] INFO: Fetched (200) <GET https://www.google.com/maps/place/Joyer%C3%ADa+y+Relojer%C3%ADa+Estrella/data=!4m7!3m6!1s0x8e4428f8d8fa3e4b:0xe7d81ea7eddfd48e!8m2!3d6.2508742!4d-75.5674881!16s%2Fg%2F11s837c9lx!19sChIJSz762PgoRI4RjtTf7ace2Oc?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: RELOJERIA EVOLUTION TIME
+[2026-06-11 17:34:21] INFO: Fetched (200) <GET https://www.google.com/maps/place/RELOJERIA+EVOLUTION+TIME/data=!4m7!3m6!1s0x8e46832c2fdaa265:0xf7923d083752117f!8m2!3d6.1974073!4d-75.558108!16s%2Fg%2F11fd4wl1mm!19sChIJZaLaLyyDRo4RfxFSNwg9kvc?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Atumano - Relojes Medellín
+[2026-06-11 17:34:30] INFO: Fetched (200) <GET https://www.google.com/maps/place/Atumano+-+Relojes+Medell%C3%ADn/data=!4m7!3m6!1s0x8e44297b3b4f699d:0xbc33f21e301c3f5d!8m2!3d6.2745799!4d-75.5760694!16s%2Fg%2F11y3j7nm8p!19sChIJnWlPO3spRI4RXT8cMB7yM7w?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Joyeria Kronos Principal
+[2026-06-11 17:34:39] INFO: Fetched (200) <GET https://www.google.com/maps/place/Joyeria+Kronos+Principal/data=!4m7!3m6!1s0x8e4428f896e8b557:0x6f3f79834e2cfae5!8m2!3d6.2493089!4d-75.5667168!16s%2Fg%2F1ptwct4hq!19sChIJV7XolvgoRI4R5fosToN5P28?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: RELOJERÍA CRONOSOL
+[2026-06-11 17:34:47] INFO: Fetched (200) <GET https://www.google.com/maps/place/RELOJER%C3%8DA+CRONOSOL/data=!4m7!3m6!1s0x8e4428ff83a2fc4b:0x22d0e22da8e999dc!8m2!3d6.2489321!4d-75.5716495!16s%2Fg%2F11g8pvykq1!19sChIJS_yig_8oRI4R3JnpqC3i0CI?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Done. 11 leads | 12 requests
+/Users/fantasma/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[INFO] LeadOS PRO | google_maps | relojería relojes Barranquilla @ Colombia | limit:50
+[INFO] Google Maps: https://www.google.com/maps/search/relojer%C3%ADa+relojes+Barranquilla+Colombia/?hl=en
+[2026-06-11 17:35:00] INFO: Fetched (200) <GET https://www.google.com/maps/search/relojer%C3%ADa+relojes+Barranquilla+Colombia/@10.9706412,-74.8035374,13z/data=!3m1!4b1?hl=en&entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps: 8 article elements
+[INFO] Maps: 8 stubs to enrich via detail pages
+[INFO] Maps detail: Mundo Reloj Del Caribe Cia. S.A.S.
+[2026-06-11 17:35:14] INFO: Fetched (200) <GET https://www.google.com/maps/place/Mundo+Reloj+Del+Caribe+Cia.+S.A.S./@10.9945678,-74.8127812,17z/data=!3m1!4b1!4m6!3m5!1s0x8ef42d0ee3b6f1b5:0x8bfe6558244e6cb5!8m2!3d10.9945678!4d-74.8127812!16s%2Fg%2F1pyqj3nh0?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Time Square Buenavista | Relojería en Barranquilla
+[2026-06-11 17:35:23] INFO: Fetched (200) <GET https://www.google.com/maps/place/Time+Square+Buenavista+%7C+Relojer%C3%ADa+en+Barranquilla/data=!4m7!3m6!1s0x8ef42c4d38d33a79:0xe28fccab396165a8!8m2!3d11.0139516!4d-74.8284057!16s%2Fg%2F1q5gsj3kj!19sChIJeTrTOE0s9I4RqGVhOavMj-I?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Relojes Barranquilla G
+[2026-06-11 17:35:31] INFO: Fetched (200) <GET https://www.google.com/maps/place/Relojes+Barranquilla+G/data=!4m7!3m6!1s0x8ef4339b9aa9cd0d:0x9ffc7cc6bfedb983!8m2!3d10.983826!4d-74.7786691!16s%2Fg%2F11vb7mf47n!19sChIJDc2pmpsz9I4Rg7ntv8Z8_J8?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: RELOJERÍA Timewatch
+[2026-06-11 17:35:40] INFO: Fetched (200) <GET https://www.google.com/maps/place/RELOJER%C3%8DA+Timewatch/data=!4m7!3m6!1s0x8ef42d9e0de4ed2f:0x69d73612722797f!8m2!3d11.0009717!4d-74.7986787!16s%2Fg%2F1pzq26xtg!19sChIJL-3kDZ4t9I4Rf3kiJ2FznQY?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: BIG TIME | Relojería - Gafas - Perfumes - Servicio técnico en Barranquilla, Centro Comercial Buenavista 2.
+[2026-06-11 17:35:49] INFO: Fetched (200) <GET https://www.google.com/maps/place/BIG+TIME+%7C+Relojer%C3%ADa+-+Gafas+-+Perfumes+-+Servicio+t%C3%A9cnico+en+Barranquilla,+Centro+Comercial+Buenavista+2./@11.0133004,-74.8279697,17z/data=!3m1!4b1!4m6!3m5!1s0x8ef42dd697f9992d:0xa922259d943d3cb3!8m2!3d11.0133004!4d-74.8279697!16s%2Fg%2F11ffm4pxvz?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: WatchTimeOficial
+[2026-06-11 17:35:59] INFO: Fetched (200) <GET https://www.google.com/maps/place/WatchTimeOficial/@10.9349383,-74.7886095,17z/data=!3m1!4b1!4m6!3m5!1s0x8ef5d3a516cb902d:0x5dd369d1e0d48947!8m2!3d10.9349383!4d-74.7886095!16s%2Fg%2F11fl55dy2r?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: La Relojería
+[2026-06-11 17:36:07] INFO: Fetched (200) <GET https://www.google.com/maps/place/La+Relojer%C3%ADa/data=!4m7!3m6!1s0x8ef42da9f65756f3:0x9b57a6f2d3565aa8!8m2!3d11.0019613!4d-74.8213075!16s%2Fg%2F11hhz60qb7!19sChIJ81ZX9qkt9I4RqFpW0_KmV5s?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: DE TODO RELOJ Taller de Relojeria, Gafas y Copias de LLaves, Cerrajeria
+[2026-06-11 17:36:16] INFO: Fetched (200) <GET https://www.google.com/maps/place/DE+TODO+RELOJ+Taller+de+Relojeria,+Gafas+y+Copias+de+LLaves,+Cerrajeria/@10.9938504,-74.8105244,17z/data=!3m1!4b1!4m6!3m5!1s0x8ef42d0cfcf7ee9f:0xc2982634bb5d0fd3!8m2!3d10.9938504!4d-74.8105244!16s%2Fg%2F1pyct2gzy?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Done. 8 leads | 9 requests
+/Users/fantasma/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[INFO] LeadOS PRO | instagram | relojería relojes lujo colombia @ Colombia | limit:50
+[INFO] Instagram warmup...
+[2026-06-11 17:36:23] INFO: Fetched (200) <GET https://www.instagram.com/> (referer: https://www.google.com/search?q=instagram)
+[2026-06-11 17:36:28] INFO: Fetched (200) <GET https://html.duckduckgo.com/html/?q=relojer%C3%ADa+relojes+lujo+colombia+Colombia+site%3Ainstagram.com> (referer: https://www.google.com/search?q=duckduckgo)
+[INFO] IG discover: 10 handles
+[INFO] IG: 10 profiles to check
+[2026-06-11 17:36:38] INFO: Fetched (200) <GET https://www.instagram.com/colombia.relojeria/> (referer: https://www.google.com/search?q=instagram)
+[INFO] @colombia.relojeria followers:72000 contact:+3015888317
+[2026-06-11 17:36:52] INFO: Fetched (200) <GET https://www.instagram.com/bc.relojeria/> (referer: https://www.google.com/search?q=instagram)
+[2026-06-11 17:36:59] INFO: Fetched (200) <GET https://www.instagram.com/la_relojeria_col/> (referer: https://www.google.com/search?q=instagram)
+[2026-06-11 17:37:10] INFO: Fetched (200) <GET https://www.instagram.com/larelojeriacolombiaoriginales/> (referer: https://www.google.com/search?q=instagram)
+[INFO] @larelojeriacolombiaoriginales followers:141000 contact:None
+[2026-06-11 17:37:18] INFO: Fetched (200) <GET https://www.instagram.com/rdyzshop/> (referer: https://www.google.com/search?q=instagram)
+[2026-06-11 17:37:26] INFO: Fetched (200) <GET https://www.instagram.com/av_relojeria/> (referer: https://www.google.com/search?q=instagram)
+[INFO] @av_relojeria followers:1073 contact:None
+[2026-06-11 17:37:34] INFO: Fetched (200) <GET https://www.instagram.com/imperiowatchh/> (referer: https://www.google.com/search?q=instagram)
+[2026-06-11 17:37:44] INFO: Fetched (200) <GET https://www.instagram.com/yourtimme_relojeria/> (referer: https://www.google.com/search?q=instagram)
+[INFO] @yourtimme_relojeria followers:36000 contact:None
+[2026-06-11 17:37:51] INFO: Fetched (200) <GET https://www.instagram.com/relojeria.manantial/> (referer: https://www.google.com/search?q=instagram)
+[INFO] @relojeria.manantial followers:94000 contact:+573206146436
+[2026-06-11 17:37:58] INFO: Fetched (200) <GET https://www.instagram.com/relojeria.vip/> (referer: https://www.google.com/search?q=instagram)
+[INFO] Done. 5 leads | 12 requests
+/Users/fantasma/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[INFO] LeadOS PRO | google_maps | tienda aromas perfumes velas @ Bogotá Colombia | limit:50
+[INFO] Google Maps: https://www.google.com/maps/search/tienda+aromas+perfumes+velas+Bogot%C3%A1+Colombia/?hl=en
+[2026-06-11 17:38:06] INFO: Fetched (200) <GET https://www.google.com/maps/search/tienda+aromas+perfumes+velas+Bogot%C3%A1+Colombia/?hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps: 8 article elements
+[INFO] Maps: 8 stubs to enrich via detail pages
+[INFO] Maps detail: Velas aromas & regalos
+[2026-06-11 17:38:14] INFO: Fetched (200) <GET https://www.google.com/maps/place/Velas+aromas+%26+regalos/data=!4m7!3m6!1s0x8e3f9d0e1aa1d8b1:0xbd64b18eb60ab03a!8m2!3d4.6553049!4d-74.1285022!16s%2Fg%2F11nb7bj2n6!19sChIJsdihGg6dP44ROrAKto6xZL0?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Perfumería Aroma RyP L-1.109
+[2026-06-11 17:38:23] INFO: Fetched (200) <GET https://www.google.com/maps/place/Perfumer%C3%ADa+Aroma+RyP+L-1.109/@4.6025204,-74.0802118,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f9981f6a091a7:0x907b7690998dd012!8m2!3d4.6025204!4d-74.0802118!16s%2Fg%2F11j59v3mfc?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: L'arôme Maison
+[2026-06-11 17:38:31] INFO: Fetched (200) <GET https://www.google.com/maps/place/L%27ar%C3%B4me+Maison/data=!4m7!3m6!1s0x8e3f9bd90a15ee59:0x5ee6afa4cad08fd1!8m2!3d4.6623405!4d-74.051394!16s%2Fg%2F11fmq0gktx!19sChIJWe4VCtmbP44R0Y_QyqSv5l4?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Velas Aromáticas Nocturna
+[2026-06-11 17:38:41] INFO: Fetched (200) <GET https://www.google.com/maps/place/Velas+Arom%C3%A1ticas+Nocturna/data=!4m7!3m6!1s0x8e3f83bf6a4918df:0xeef848eae6771880!8m2!3d4.710598!4d-74.1316036!16s%2Fg%2F11wxx__h46!19sChIJ3xhJar-DP44RgBh35upI-O4?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Azaahar
+[2026-06-11 17:38:50] INFO: Fetched (200) <GET https://www.google.com/maps/place/Azaahar/@4.7221098,-74.0528766,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f8593259cfb07:0x999024793da58277!8m2!3d4.7221098!4d-74.0528766!16s%2Fg%2F11sd944t7g?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Aromas Ana María
+[2026-06-11 17:39:01] INFO: Fetched (200) <GET https://www.google.com/maps/place/Aromas+Ana+Mar%C3%ADa/data=!4m7!3m6!1s0x8e3f993037e32bdb:0x9508d28c07f61124!8m2!3d4.6004808!4d-74.07671!16s%2Fg%2F11l8v21cps!19sChIJ2yvjNzCZP44RJBH2B4zSCJU?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Gaia Calm Velas Artesanales
+[2026-06-11 17:39:09] INFO: Fetched (200) <GET https://www.google.com/maps/place/Gaia+Calm+Velas+Artesanales/data=!4m7!3m6!1s0x8e3f9ba0765cbab5:0x1ef00223abff7085!8m2!3d4.6664435!4d-74.0842566!16s%2Fg%2F11npbbdrng!19sChIJtbpcdqCbP44RhXD_qyMC8B4?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Velas e Insumos León | Distribuidora de Insumos Para Velas en Bogotá y Colombia
+[2026-06-11 17:39:17] INFO: Fetched (200) <GET https://www.google.com/maps/place/Velas+e+Insumos+Le%C3%B3n+%7C+Distribuidora+de+Insumos+Para+Velas+en+Bogot%C3%A1+y+Colombia/@4.6920698,-74.0941061,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f85d127b65cc3:0x9309557406853115!8m2!3d4.6920698!4d-74.0941061!16s%2Fg%2F11rbnllb75?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Done. 8 leads | 9 requests
+/Users/fantasma/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[INFO] LeadOS PRO | google_maps | tienda fragancias aromas @ Medellín Colombia | limit:50
+[INFO] Google Maps: https://www.google.com/maps/search/tienda+fragancias+aromas+Medell%C3%ADn+Colombia/?hl=en
+[2026-06-11 17:39:38] INFO: Fetched (200) <GET https://www.google.com/maps/search/tienda+fragancias+aromas+Medell%C3%ADn+Colombia/@6.2470234,-75.5778009,13z/data=!3m1!4b1?hl=en&entry=ttu&g_ep=EgoyMDI2MDYxMC4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps: 8 article elements
+[INFO] Maps: 8 stubs to enrich via detail pages
+[INFO] Maps detail: Gran Aroma - Perfumes de Nicho
+[2026-06-11 17:39:48] INFO: Fetched (200) <GET https://www.google.com/maps/place/Gran+Aroma+-+Perfumes+de+Nicho/@6.202025,-75.5566989,17z/data=!3m1!4b1!4m6!3m5!1s0x8e44292ea845fb55:0xee57c4c7e7e5e9b4!8m2!3d6.202025!4d-75.5566989!16s%2Fg%2F11syzgdz3c?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Perfumes Aromas de Lujo
+[2026-06-11 17:39:58] INFO: Fetched (200) <GET https://www.google.com/maps/place/Perfumes+Aromas+de+Lujo/data=!4m7!3m6!1s0x8e4429f6848e7029:0x83218cfcd8c28c4a!8m2!3d6.2458753!4d-75.5706974!16s%2Fg%2F11yql144rw!19sChIJKXCOhPYpRI4RSozC2PyMIYM?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: disfraromas
+[2026-06-11 17:40:05] INFO: Fetched (200) <GET https://www.google.com/maps/place/disfraromas/data=!4m7!3m6!1s0x8e442901d5b42263:0xc28950cead937736!8m2!3d6.2514169!4d-75.5744543!16s%2Fg%2F11hcjwn939!19sChIJYyK01QEpRI4RNneTrc5QicI?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Internacional De Aromas: Distribuidora de Productos de Perfumería y Envases
+[2026-06-11 17:40:13] INFO: Fetched (200) <GET https://www.google.com/maps/place/Internacional+De+Aromas:+Distribuidora+de+Productos+de+Perfumer%C3%ADa+y+Envases/data=!4m7!3m6!1s0x8e442921485eed19:0xc1d695eb869a14c0!8m2!3d6.2520164!4d-75.573655!16s%2Fg%2F11fjy0lvx8!19sChIJGe1eSCEpRI4RwBSahuuV1sE?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Aroma real perfumería
+[WARN] Blocked https://www.google.com/maps/place/Aroma+real+perfumer%C3%ADa/data=!4m7!3m6!1s0x8e4429d402aecd5b:0xee679a985a868309!8m2!3d6.2586079!4d-75.6183072!16s%2Fg%2F11z4y2kbr2!19sChIJW82uAtQpRI4RCYOGWpiaZ-4?authuser=0&hl=en&rclk=1&hl=en attempt 1/3 — 30s
+[2026-06-11 17:41:24] INFO: Fetched (200) <GET https://www.google.com/maps/place/Aroma+real+perfumer%C3%ADa/@6.2586079,-75.6183072,17z/data=!3m1!4b1!4m6!3m5!1s0x8e4429d402aecd5b:0xee679a985a868309!8m2!3d6.2586079!4d-75.6183072!16s%2Fg%2F11z4y2kbr2?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Aromas y Fragancias
+[2026-06-11 17:41:33] INFO: Fetched (200) <GET https://www.google.com/maps/place/Aromas+y+Fragancias/data=!4m7!3m6!1s0x8e442f386149e71f:0xab61afb51c71cde6!8m2!3d6.2949031!4d-75.577214!16s%2Fg%2F11q3yztq8c!19sChIJH-dJYTgvRI4R5s1xHLWvYas?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Disfragancias Oviedo
+[2026-06-11 17:41:42] INFO: Fetched (200) <GET https://www.google.com/maps/place/Disfragancias+Oviedo/data=!4m7!3m6!1s0x8e4683dc357c0011:0x7a83c1072de7a6a6!8m2!3d6.1991437!4d-75.5756365!16s%2Fg%2F11xfln3pgl!19sChIJEQB8NdyDRo4RpqbnLQfBg3o?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: EDÉN Perfume Atelier
+[2026-06-11 17:41:49] INFO: Fetched (200) <GET https://www.google.com/maps/place/ED%C3%89N+Perfume+Atelier/data=!4m7!3m6!1s0x8e4429b93cffc15b:0x6340d68239c08169!8m2!3d6.2089645!4d-75.5657806!16s%2Fg%2F11y0pgkdm4!19sChIJW8H_PLkpRI4RaYHAOYLWQGM?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Done. 8 leads | 9 requests
+/Users/fantasma/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[INFO] LeadOS PRO | google_maps | perfumería aromas difusores @ Cali Colombia | limit:50
+[INFO] Google Maps: https://www.google.com/maps/search/perfumer%C3%ADa+aromas+difusores+Cali+Colombia/?hl=en
+[2026-06-11 17:41:57] INFO: Fetched (200) <GET https://www.google.com/maps/search/perfumer%C3%ADa+aromas+difusores+Cali+Colombia/?hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps: 7 article elements
+[INFO] Maps: 7 stubs to enrich via detail pages
+[INFO] Maps detail: Perfumería Aromas
+[2026-06-11 17:42:17] INFO: Fetched (200) <GET https://www.google.com/maps/place/Perfumer%C3%ADa+Aromas/@3.4934693,-76.4953689,17z/data=!3m1!4b1!4m6!3m5!1s0x8e30a864bf8be975:0x466f4ae6e84749c0!8m2!3d3.4934693!4d-76.4953689!16s%2Fg%2F11bycrtfc2?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[SKIP] Perfumería Aromas: no phone or website found
+[INFO] Maps detail: AROMAS HL
+[2026-06-11 17:42:25] INFO: Fetched (200) <GET https://www.google.com/maps/place/AROMAS+HL/data=!4m7!3m6!1s0x8e30a668117eea25:0x806e03ea6b0dbe0d!8m2!3d3.4542251!4d-76.5267791!16s%2Fg%2F1q5bmwx0v!19sChIJJep-EWimMI4RDb4Na-oDboA?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Perfumares Essencias S.A.S
+[2026-06-11 17:42:37] INFO: Fetched (200) <GET https://www.google.com/maps/place/Perfumares+Essencias+S.A.S/@3.431951,-76.526903,17z/data=!3m1!4b1!4m6!3m5!1s0x8e30a714355ab867:0x2bd941a84c16761f!8m2!3d3.431951!4d-76.526903!16s%2Fg%2F11fn6sfkpj?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Perfumería Royal
+[2026-06-11 17:42:46] INFO: Fetched (200) <GET https://www.google.com/maps/place/Perfumer%C3%ADa+Royal/@3.442511,-76.5026414,17z/data=!3m1!4b1!4m6!3m5!1s0x8e30a655540b7e4f:0xe44735d07cf88522!8m2!3d3.442511!4d-76.5026414!16s%2Fg%2F11gfp980tl?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Dulcee Aroma Cali
+[2026-06-11 17:42:54] INFO: Fetched (200) <GET https://www.google.com/maps/place/Dulcee+Aroma+Cali/data=!4m7!3m6!1s0x8e30a774423cbc5d:0x172641d7536b77a2!8m2!3d3.4523903!4d-76.5302145!16s%2Fg%2F11p031whtp!19sChIJXbw8QnSnMI4RondrU9dBJhc?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Quim Aromas
+[2026-06-11 17:43:04] INFO: Fetched (200) <GET https://www.google.com/maps/place/Quim+Aromas/data=!4m7!3m6!1s0x8e30a65d35942e15:0xbaf2fe5ad6dd9ff1!8m2!3d3.4531715!4d-76.5241781!16s%2Fg%2F11jwsbrdc3!19sChIJFS6UNV2mMI4R8Z_d1lr-8ro?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Puro Aroma Cali Distribuidor
+[2026-06-11 17:43:12] INFO: Fetched (200) <GET https://www.google.com/maps/place/Puro+Aroma+Cali+Distribuidor/data=!4m7!3m6!1s0x8e30a7881f263033:0xd3e015e51e9a4961!8m2!3d3.45096!4d-76.5034247!16s%2Fg%2F11tp5lzscs!19sChIJMzAmH4inMI4RYUmaHuUV4NM?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Done. 6 leads | 8 requests
+/Users/fantasma/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[INFO] LeadOS PRO | instagram | tienda aromas colombia fragancias @ Colombia | limit:50
+[INFO] Instagram warmup...
+[2026-06-11 17:43:18] INFO: Fetched (200) <GET https://www.instagram.com/> (referer: https://www.google.com/search?q=instagram)
+[2026-06-11 17:43:23] INFO: Fetched (200) <GET https://html.duckduckgo.com/html/?q=tienda+aromas+colombia+fragancias+Colombia+site%3Ainstagram.com> (referer: https://www.google.com/search?q=duckduckgo)
+[INFO] IG discover: 10 handles
+[INFO] IG: 10 profiles to check
+[2026-06-11 17:43:29] INFO: Fetched (200) <GET https://www.instagram.com/fraganciascolombia/> (referer: https://www.google.com/search?q=instagram)
+[INFO] @fraganciascolombia followers:66000 contact:None
+[2026-06-11 17:43:35] INFO: Fetched (200) <GET https://www.instagram.com/domaine.aroma/> (referer: https://www.google.com/search?q=instagram)
+[2026-06-11 17:43:44] INFO: Fetched (200) <GET https://www.instagram.com/aromascolombianasoficial/> (referer: https://www.google.com/search?q=instagram)
+[INFO] @aromascolombianasoficial followers:5435 contact:None
+[2026-06-11 17:43:52] INFO: Fetched (200) <GET https://www.instagram.com/fraganceroscolombia/> (referer: https://www.google.com/search?q=instagram)
+[INFO] @fraganceroscolombia followers:8615 contact:None
+[2026-06-11 17:44:00] INFO: Fetched (200) <GET https://www.instagram.com/coolfragance_col/> (referer: https://www.google.com/search?q=instagram)
+[2026-06-11 17:44:13] INFO: Fetched (200) <GET https://www.instagram.com/advanceperfumeriacol/> (referer: https://www.google.com/search?q=instagram)
+[INFO] @advanceperfumeriacol followers:27000 contact:None
+[2026-06-11 17:44:21] INFO: Fetched (200) <GET https://www.instagram.com/todoaromascolombia/> (referer: https://www.google.com/search?q=instagram)
+[2026-06-11 17:44:31] INFO: Fetched (200) <GET https://www.instagram.com/aromas_ccs/> (referer: https://www.google.com/search?q=instagram)
+[INFO] @aromas_ccs followers:90000 contact:None
+[2026-06-11 17:44:44] INFO: Fetched (200) <GET https://www.instagram.com/perfumesonlineoficial/> (referer: https://www.google.com/search?q=instagram)
+[2026-06-11 17:44:54] INFO: Fetched (200) <GET https://www.instagram.com/gtaromas/> (referer: https://www.google.com/search?q=instagram)
+[INFO] @gtaromas followers:1204 contact:None
+[INFO] Done. 6 leads | 12 requests
+/Users/fantasma/Library/Python/3.9/lib/python/site-packages/urllib3/__init__.py:35: NotOpenSSLWarning: urllib3 v2 only supports OpenSSL 1.1.1+, currently the 'ssl' module is compiled with 'LibreSSL 2.8.3'. See: https://github.com/urllib3/urllib3/issues/3020
+  warnings.warn(
+[INFO] LeadOS PRO | google_maps | tienda tecnología celulares accesorios @ Colombia | limit:50
+[INFO] Google Maps: https://www.google.com/maps/search/tienda+tecnolog%C3%ADa+celulares+accesorios+Colombia/?hl=en
+[2026-06-11 17:45:04] INFO: Fetched (200) <GET https://www.google.com/maps/search/tienda+tecnolog%C3%ADa+celulares+accesorios+Colombia/@7.7928519,-74.8123231,7z/data=!3m1!4b1?hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps: 10 article elements
+[INFO] Maps: 10 stubs to enrich via detail pages
+[INFO] Maps detail: Centro de Tecnología
+[2026-06-11 17:45:13] INFO: Fetched (200) <GET https://www.google.com/maps/place/Centro+de+Tecnolog%C3%ADa/data=!4m7!3m6!1s0x8e3f9923cbd5ae09:0x7d1f17b7c432bae1!8m2!3d4.6083711!4d-74.0845931!16s%2Fg%2F11lg2tlm69!19sChIJCa7VyyOZP44R4boyxLcXH30?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Accesorios y Tecnologia Store / Local 106
+[2026-06-11 17:45:21] INFO: Fetched (200) <GET https://www.google.com/maps/place/Accesorios+y+Tecnologia+Store+%2F+Local+106/data=!4m7!3m6!1s0x8ef42d003386b8bf:0xc0b346edf5e347d7!8m2!3d10.9845413!4d-74.7902435!16s%2Fg%2F11wblgb8s0!19sChIJv7iGMwAt9I4R10fj9e1Gs8A?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: TECHNOLOGY DIGITAL MOBILE TIENDA TECNOLOGICA
+[2026-06-11 17:45:29] INFO: Fetched (200) <GET https://www.google.com/maps/place/TECHNOLOGY+DIGITAL+MOBILE+TIENDA+TECNOLOGICA/data=!4m7!3m6!1s0x8e3f9998b7c57cf9:0xc51d7b16e4666fc1!8m2!3d4.608038!4d-74.0704489!16s%2Fg%2F11clws3m8x!19sChIJ-XzFt5iZP44RwW9m5BZ7HcU?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Mayorista , Tienda de accesorios celular , estuches de table , vidrios templado ,suministro de computadores , iPhone
+[2026-06-11 17:45:37] INFO: Fetched (200) <GET https://www.google.com/maps/place/Mayorista+,+Tienda+de+accesorios+celular+,+estuches+de+table+,+vidrios+templado+,suministro+de+computadores+,+iPhone/data=!4m7!3m6!1s0x8e3f9b3d1a2e1ecb:0xd113d07a1f98ba2d!8m2!3d4.6652859!4d-74.0581939!16s%2Fg%2F11vr936nlw!19sChIJyx4uGj2bP44RLbqYH3rQE9E?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Accesorios para celulares en Bogotá - Tienda online de tecnologia
+[2026-06-11 17:45:45] INFO: Fetched (200) <GET https://www.google.com/maps/place/Accesorios+para+celulares+en+Bogot%C3%A1+-+Tienda+online+de+tecnologia/data=!4m7!3m6!1s0x8e3f9933638f346b:0xdde7ee4d28e5c2f1!8m2!3d4.6081576!4d-74.0846272!16s%2Fg%2F1tr7kfqz!19sChIJazSPYzOZP44R8cLlKE3u590?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Móviles & Tecnología Pink
+[2026-06-11 17:45:55] INFO: Fetched (200) <GET https://www.google.com/maps/place/M%C3%B3viles+%26+Tecnolog%C3%ADa+Pink/@4.6162811,-74.1022949,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f997df1d1c2d5:0x2ab6d1316b0dea66!8m2!3d4.6162811!4d-74.1022949!16s%2Fg%2F11mr4fysx3?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Unilago - cables, conectores , servicio técnico, portátiles, jbl , Bose , cargadores , forros
+[2026-06-11 17:46:05] INFO: Fetched (200) <GET https://www.google.com/maps/place/Unilago+-+cables,+conectores+,+servicio+t%C3%A9cnico,+port%C3%A1tiles,+jbl+,+Bose+,+cargadores+,+forros/data=!4m7!3m6!1s0x8e3f9a5f43865345:0x9a4053980e7350ad!8m2!3d4.6652859!4d-74.0581939!16s%2Fg%2F11b7q5f84j!19sChIJRVOGQ1-aP44RrVBzDphTQJo?authuser=0&hl=en&rclk=1&hl=en> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: RINOCEL Tienda de tecnologia bogota
+[2026-06-11 17:46:14] INFO: Fetched (200) <GET https://www.google.com/maps/place/RINOCEL+Tienda+de+tecnologia+bogota/@4.6011625,-74.0776512,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f99df324b3915:0x34a9a062f7827cfd!8m2!3d4.6011625!4d-74.0776512!16s%2Fg%2F11rcl2hj6b?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: ROCKET TECNOLOGIA Y ACCESORIOS
+[2026-06-11 17:46:23] INFO: Fetched (200) <GET https://www.google.com/maps/place/ROCKET+TECNOLOGIA+Y+ACCESORIOS/@4.6415123,-74.170978,17z/data=!3m1!4b1!4m6!3m5!1s0x8e3f9da5e6b3eebd:0xf4f8d753c40ec7f5!8m2!3d4.6415123!4d-74.170978!16s%2Fg%2F11n8y_yd6p?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Maps detail: Technology Store
+[2026-06-11 17:46:33] INFO: Fetched (200) <GET https://www.google.com/maps/place/Technology+Store/@6.2518155,-75.5660727,17z/data=!3m1!4b1!4m6!3m5!1s0x8e4428f96c8516d5:0xab1b89d69412ffae!8m2!3d6.2518155!4d-75.5660727!16s%2Fg%2F1ptww52ym?authuser=0&hl=en&hl=en&entry=ttu&g_ep=EgoyMDI2MDYwOS4wIKXMDSoASAFQAw%3D%3D> (referer: https://www.google.com/search?q=google)
+[INFO] Done. 10 leads | 11 requests
