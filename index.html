@@ -32,7 +32,6 @@
     }
 
     html {
-      scroll-behavior: smooth;
       -webkit-font-smoothing: antialiased;
       scrollbar-width: thin;
       scrollbar-color: var(--red) var(--bg);
@@ -104,7 +103,7 @@
       border: 1px solid rgba(255,255,255,0.09); border-radius: 100px;
       padding: 0.4rem 1rem; margin-bottom: 1.4rem;
       background: rgba(255,255,255,0.025); backdrop-filter: blur(12px);
-      opacity: 0;
+      opacity: 1;
     }
 
     .hero-badge-dot {
@@ -114,7 +113,7 @@
 
     .hero-eyebrow {
       font-family: 'Poppins', sans-serif; font-size: 0.75rem; letter-spacing: 0.3em;
-      text-transform: uppercase; color: var(--red); margin-bottom: 1.5rem; opacity: 0; font-weight: 700;
+      text-transform: uppercase; color: var(--red); margin-bottom: 1.5rem; opacity: 1; font-weight: 700;
     }
 
     .hero-title {
@@ -126,10 +125,10 @@
 
     .hero-sub {
       font-family: 'Inter', sans-serif; font-size: clamp(0.85rem, 2vw, 1rem);
-      color: var(--muted); margin-bottom: 2rem; max-width: 520px; line-height: 1.7; opacity: 0;
+      color: var(--muted); margin-bottom: 2rem; max-width: 520px; line-height: 1.7; opacity: 1;
     }
 
-    .hero-actions { display: flex; gap: 1rem; justify-content: center; align-items: center; opacity: 0; flex-wrap: wrap; }
+    .hero-actions { display: flex; gap: 1rem; justify-content: center; align-items: center; opacity: 1; flex-wrap: wrap; }
 
     .btn-primary {
       background: var(--red); color: white; padding: 1rem 2.8rem;
@@ -537,10 +536,6 @@
   <section id="hero">
     <div class="hero-bg"></div>
     <div class="hero-content">
-      <div class="hero-badge" id="hero-badge">
-        <div class="hero-badge-dot"></div>
-        <span>Conversión garantizada</span>
-      </div>
       <p class="hero-eyebrow">Diseño que vende</p>
       <h1 class="hero-title">
         Tu página de ventas<br>
@@ -551,7 +546,7 @@
         Desde $100. Sin compromisos. Comienza hoy.
       </p>
       <div class="hero-actions">
-        <button class="btn-primary" onclick="document.getElementById('pricing').scrollIntoView()">
+        <button class="btn-primary" onclick="document.getElementById('pricing').scrollIntoView({behavior:'smooth'})" >
           Ver Precios
         </button>
         <a href="https://wa.me/573507016717?text=Quiero%20una%20web%20que%20venda" class="btn-ghost">
@@ -857,14 +852,16 @@
       nav.classList.toggle('scrolled', window.scrollY > 80);
     });
 
-    // Hero animations
-    window.addEventListener('load', () => {
-      const tl = gsap.timeline({ delay: 0.2 });
-      tl.to('#hero-badge', { opacity: 1, duration: 0.6, ease: 'power2.out' }, 0)
-        .to('.hero-eyebrow', { opacity: 1, duration: 0.6 }, 0.1)
-        .to('.hero-sub', { opacity: 1, duration: 0.6 }, 0.15)
-        .to('.hero-actions', { opacity: 1, duration: 0.6 }, 0.2);
-    });
+    // Hero animations — run immediately (GSAP loaded sync in <head>, no window.load wait)
+    (function () {
+      try {
+        var tl = gsap.timeline({ delay: 0.1 });
+        tl.from('.hero-eyebrow',  { opacity: 0, y: 10, duration: 0.5,  ease: 'power2.out' }, 0)
+          .from('.hero-title',    { opacity: 0, y: 24, duration: 0.65, ease: 'power2.out' }, 0.1)
+          .from('.hero-sub',      { opacity: 0, y: 12, duration: 0.5,  ease: 'power2.out' }, 0.28)
+          .from('.hero-actions',  { opacity: 0, y: 12, duration: 0.5,  ease: 'power2.out' }, 0.38);
+      } catch (e) {}
+    })();
 
     // Form handler
     function handleForm(e) {
@@ -879,7 +876,7 @@
 
     // Splash coordinator — hides splash once all 3 sections have their first frame ready
     (function () {
-      var TOTAL = 3, MIN_MS = 1200, count = 0, minPassed = false;
+      var TOTAL = 3, MIN_MS = 600, count = 0, minPassed = false;
       function tryHide() {
         if (count < TOTAL || !minPassed) return;
         var el = document.getElementById('splash');
@@ -888,10 +885,10 @@
         setTimeout(function () { el.style.display = 'none'; }, 950);
       }
       setTimeout(function () { minPassed = true; tryHide(); }, MIN_MS);
-      // Safety: always hide splash by 2.5s even if a frame request hangs
+      // Safety: always hide splash by 1.5s even if a frame request hangs
       setTimeout(function () {
         count = TOTAL; minPassed = true; tryHide();
-      }, 2500);
+      }, 1500);
       window._splashSectionReady = function () {
         count++;
         var pct = Math.round((count / TOTAL) * 100);
@@ -1165,17 +1162,7 @@
           });
         }
 
-        // Badge floating
-        const badge = document.getElementById('hero-badge');
-        if (badge) {
-          gsap.to(badge, {
-            y: -10,
-            duration: 3,
-            repeat: -1,
-            yoyo: true,
-            ease: 'sine.inOut',
-          });
-        }
+        // Badge floating handled in inline hero block above
       } catch (e) {
         console.error('Animations error:', e);
       }
